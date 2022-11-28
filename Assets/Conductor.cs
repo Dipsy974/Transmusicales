@@ -1,0 +1,58 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Conductor : MonoBehaviour
+{
+
+    //Base de données
+    public SongDatabaseUpdated songDatabase; //SongDatabase pour la single line
+    public SongDatabaseUpdated.Song selectedSong; 
+
+    //Position Tracking
+    public float secPerBeat;
+    public float songPosition;
+    public float songPositionInBeats;
+    public float dspSongTime;
+    public float firstBeatOffset;
+
+    //Song Info
+    public float songBpm;
+    public SongDatabaseUpdated.KeyBeats[] notes;  
+    public AudioSource music;
+
+
+    //Note sprite
+    public GameObject sprt_note;
+  
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Récupère une chanson au hasard dans la base de données pour l'instant. Devra faire en sorte de récupérer la chanson sélectionnée par l'utilisateur
+        selectedSong = songDatabase.myDB.songs[Random.Range(0, songDatabase.myDB.songs.Length)];
+        songBpm = selectedSong.bpm;
+        notes = selectedSong.keyBeats; 
+        music.clip = selectedSong.audio;
+     
+
+
+        dspSongTime = (float)AudioSettings.dspTime;
+
+        secPerBeat = 60f / songBpm;
+
+        music.Play(); 
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
+
+        songPositionInBeats = songPosition / secPerBeat; 
+
+    }
+}
