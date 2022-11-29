@@ -7,7 +7,7 @@ public class Conductor : MonoBehaviour
 
     //Base de données
     public SongDatabaseUpdated songDatabase; //SongDatabase pour la single line
-    public SongDatabaseUpdated.Song selectedSong; 
+    public Song selectedSong; 
 
     //Position Tracking
     public float secPerBeat;
@@ -18,7 +18,7 @@ public class Conductor : MonoBehaviour
 
     //Song Info
     public float songBpm;
-    public SongDatabaseUpdated.KeyBeats[] notes;  
+    public KeyBeats[] notes;  
     public AudioSource music;
 
 
@@ -32,7 +32,7 @@ public class Conductor : MonoBehaviour
     void Start()
     {
         //Récupère une chanson au hasard dans la base de données pour l'instant. Devra faire en sorte de récupérer la chanson sélectionnée par l'utilisateur
-        selectedSong = songDatabase.myDB.songs[Random.Range(0, songDatabase.myDB.songs.Length)];
+        selectedSong = songDatabase.songs[Random.Range(0, songDatabase.songs.Length)];
         songBpm = selectedSong.bpm;
         notes = selectedSong.keyBeats; 
         music.clip = selectedSong.audio;

@@ -8,7 +8,7 @@ public class CheckRythm : MonoBehaviour
     public NoteSpawner myNS;
     public CharacterMovement myCharacter; 
     private int compteur = 0;
-    private SongDatabaseUpdated.KeyBeats currentNote;
+    private KeyBeats currentNote;
     public float range; 
 
     // Start is called before the first frame update

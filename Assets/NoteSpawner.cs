@@ -13,7 +13,7 @@ public class NoteSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SongDatabaseUpdated.Song selectedSong = myCond.selectedSong;
+        Song selectedSong = myCond.selectedSong;
 
 
         ////SINGLE LINE SPAWNER
@@ -40,7 +40,7 @@ public class NoteSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SongDatabaseUpdated.Song selectedSong = myCond.selectedSong;
+        Song selectedSong = myCond.selectedSong;
 
         for (int i = 0; i < listNotes.Count; i++)
         {

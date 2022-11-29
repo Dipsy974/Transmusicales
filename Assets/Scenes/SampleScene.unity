@@ -891,12 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songDatabase: {fileID: 1710577855}
-  selectedSong:
-    name: 
-    artist: 
-    audio: {fileID: 0}
-    bpm: 0
-    keyBeats: []
+  selectedSong: {fileID: 0}
   secPerBeat: 0
   songPosition: 0
   songPositionInBeats: 0
@@ -1062,33 +1057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8f983dd0f53354e996d7bb54cc8df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myDB:
-    songs:
-    - name: Harpsong
-      artist: Joueur de Harpe
-      audio: {fileID: 8300000, guid: a5042c6b097575a4fbd181f73043839c, type: 3}
-      bpm: 90
-      keyBeats:
-      - keyPosition: 3
-        line: 2
-      - keyPosition: 4
-        line: 1
-      - keyPosition: 8
-        line: 1
-      - keyPosition: 12
-        line: 1
-      - keyPosition: 16
-        line: 0
-      - keyPosition: 20
-        line: 2
-      - keyPosition: 24
-        line: 1
-      - keyPosition: 26
-        line: 2
-      - keyPosition: 32
-        line: 0
-      - keyPosition: 34
-        line: 2
+  songs:
+  - {fileID: 11400000, guid: 316753734a057b04bbff3979dcc716be, type: 2}
 --- !u!4 &1710577856
 Transform:
   m_ObjectHideFlags: 0
