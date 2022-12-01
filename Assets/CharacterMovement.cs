@@ -53,7 +53,7 @@ public class CharacterMovement : MonoBehaviour
         
 
 
-        transform.position = curve.transform.TransformPoint(x, y, 0);
+        transform.position = curve.transform.TransformPoint(x, y, -1);
     }
 
     bool Approximation(float value, float valuedeux)

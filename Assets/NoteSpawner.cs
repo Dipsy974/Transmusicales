@@ -35,6 +35,9 @@ public class NoteSpawner : MonoBehaviour
             listNotes.Add(note);
         }
 
+
+
+
     }
 
     // Update is called once per frame
@@ -47,7 +50,27 @@ public class NoteSpawner : MonoBehaviour
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
             Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes-1)) / (int)myCond.songBpm);
             listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos);
+        }
 
+
+        //Link les notes entre elles
+        for (int i = 0; i < selectedSong.keyBeats.Length; i++)
+        {
+            if (selectedSong.keyBeats[i].linked)
+            {
+                Vector3 startLine = listNotes[i].transform.position;
+                Vector3 endLine = listNotes[i + 1].transform.position;
+
+                GameObject myLine = new GameObject();
+                myLine.transform.position = startLine;
+                myLine.AddComponent<LineRenderer>();
+                LineRenderer lr = myLine.GetComponent<LineRenderer>();
+                lr.SetWidth(0.1f, 0.1f);
+                lr.SetPosition(0, startLine);
+                lr.SetPosition(1, endLine);
+            }
+
+           
         }
     }
 }

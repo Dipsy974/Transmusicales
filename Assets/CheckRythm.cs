@@ -36,9 +36,10 @@ public class CheckRythm : MonoBehaviour
             {
                 myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
             }
-        }
-        
+        }  
     }
+
+    
 
     bool Approximation(float value, float secondvalue)
     {
