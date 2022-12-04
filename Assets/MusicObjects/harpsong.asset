@@ -19,21 +19,25 @@ MonoBehaviour:
   keyBeats:
   - keyPosition: 4
     line: 2
-    linked: 0
-    linkedTo: 0
+    linkedStart: 1
+    linkedEnd: 0
+  - keyPosition: 6
+    line: 2
+    linkedStart: 0
+    linkedEnd: 1
   - keyPosition: 8
     line: 0
-    linked: 0
-    linkedTo: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 12
     line: 1
-    linked: 1
-    linkedTo: 0
+    linkedStart: 1
+    linkedEnd: 0
   - keyPosition: 16
     line: 0
-    linked: 1
-    linkedTo: 0
+    linkedStart: 1
+    linkedEnd: 1
   - keyPosition: 18
     line: 2
-    linked: 0
-    linkedTo: 0
+    linkedStart: 0
+    linkedEnd: 1

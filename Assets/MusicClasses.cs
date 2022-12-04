@@ -7,7 +7,7 @@ public class KeyBeats
 {
     public float keyPosition;
     public int line;
-    public bool linked;
-    public int linkedTo; 
+    public bool linkedStart;
+    public bool linkedEnd; 
 }
 

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 firstPressPos;
     private Vector2 secondPressPos;
     private Vector2 currentSwipe;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,47 +23,74 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.touchCount > 0)
         {
-            myCheck.CheckNote(); 
-        }
 
-        Swipe(); 
+            Swipe();
+
+
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+  
+            myCheck.CheckNote(); //check if note is pressed 
+            
+            if (myCharacter.freeMode)
+            {
+                myCharacter.FollowInput(touchPosition);
+
+                if (touch.phase == TouchPhase.Ended)
+                {
+                    myCharacter.freeMode = false;
+                    myCharacter.SnapToClosestLine();
+                }
+            }
+            
+        }
+       
+        
+        
+
     }
 
+
+ 
     public void Swipe()
     {
-        if (Input.touches.Length > 0)
+        if (!myCharacter.freeMode) // swipe disponibles que si le freemode est pas activé
         {
-            Touch t = Input.GetTouch(0);
-            if (t.phase == TouchPhase.Began)
+            if (Input.touches.Length > 0)
             {
-                //save began touch 2d point
-                firstPressPos = new Vector2(t.position.x, t.position.y);
-            }
-            if (t.phase == TouchPhase.Ended)
-            {
-                //save ended touch 2d point
-                secondPressPos = new Vector2(t.position.x, t.position.y);
-
-                //create vector from the two points
-                currentSwipe = new Vector3(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-
-                //normalize the 2d vector
-                Vector2 currentSwipeNormalized = currentSwipe.normalized; //Pour gérer la direction du swipe à la verticale
-
-
-              
-                //swipe left
-                if (currentSwipe.x < -swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                Touch t = Input.GetTouch(0);
+                if (t.phase == TouchPhase.Began)
                 {
-                    myCharacter.ChangePath("RIGHT");
+                    //save began touch 2d point
+                    firstPressPos = new Vector2(t.position.x, t.position.y);
                 }
-                //swipe right
-                if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                if (t.phase == TouchPhase.Ended)
                 {
-                    myCharacter.ChangePath("LEFT");
+                    //save ended touch 2d point
+                    secondPressPos = new Vector2(t.position.x, t.position.y);
+
+                    //create vector from the two points
+                    currentSwipe = new Vector3(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+
+                    //normalize the 2d vector
+                    Vector2 currentSwipeNormalized = currentSwipe.normalized; //Pour gérer la direction du swipe à la verticale
+
+
+
+                    //swipe left
+                    if (currentSwipe.x < -swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                    {
+                        myCharacter.ChangePath("RIGHT");
+                    }
+                    //swipe right
+                    if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                    {
+                        myCharacter.ChangePath("LEFT");
+                    }
                 }
             }
         }
+        
     }
 
 

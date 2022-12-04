@@ -56,7 +56,7 @@ public class NoteSpawner : MonoBehaviour
         //Link les notes entre elles
         for (int i = 0; i < selectedSong.keyBeats.Length; i++)
         {
-            if (selectedSong.keyBeats[i].linked)
+            if (selectedSong.keyBeats[i].linkedStart)
             {
                 Vector3 startLine = listNotes[i].transform.position;
                 Vector3 endLine = listNotes[i + 1].transform.position;

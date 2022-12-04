@@ -11,7 +11,8 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 startPos;
     private Vector3 finalPos;
     private int compteur = 0;
-    public int pathIndex = 1; 
+    public int pathIndex = 1;
+    public bool freeMode = false;
 
 
 
@@ -50,10 +51,16 @@ public class CharacterMovement : MonoBehaviour
                 compteur++;
             }
         }
-        
 
 
-        transform.position = curve.transform.TransformPoint(x, y, -1);
+        if (!freeMode)
+        {
+            transform.position = curve.transform.TransformPoint(x, y, -1); //Suit la ligne
+        }
+        else
+        {
+            transform.position = new Vector3(transform.position.x, y, -1); // Ajuste le y aux déplacements du personnage gérés dans FollowInput
+        }
     }
 
     bool Approximation(float value, float valuedeux)
@@ -66,6 +73,11 @@ public class CharacterMovement : MonoBehaviour
         {
             return false; 
         }
+    }
+
+    float Difference(float value, float valuedeux)
+    {
+        return Mathf.Abs(valuedeux - value); 
     }
 
     public void ChangePath(string direction)
@@ -86,6 +98,30 @@ public class CharacterMovement : MonoBehaviour
 
 
         curve = curves[pathIndex];
+        startPos = curve.myLR.GetPosition(0);
+        finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
+    }
+
+    public void FollowInput(Vector2 position)
+    {
+        transform.position = new Vector3(position.x, transform.position.y, -1); 
+    }
+
+    public void SnapToClosestLine()
+    {
+        Sinewave closestCurve = curves[0]; 
+        for(int i = 0; i < curves.Length; i++)
+        {
+             
+            
+            if(Difference(closestCurve.transform.position.x, transform.position.x) >= Difference(curves[i].transform.position.x, transform.position.x))
+            {
+                closestCurve = curves[i];
+                pathIndex = i; 
+            }
+        }
+ 
+        curve = closestCurve; 
         startPos = curve.myLR.GetPosition(0);
         finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
     }

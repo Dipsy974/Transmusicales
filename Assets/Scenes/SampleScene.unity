@@ -860,6 +860,7 @@ MonoBehaviour:
   myCond: {fileID: 1447550074}
   myNS: {fileID: 840529156}
   pathIndex: 1
+  freeMode: 0
 --- !u!1 &1447550073
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,20 +902,36 @@ MonoBehaviour:
   notes:
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   - keyPosition: 0
     line: 0
+    linkedStart: 0
+    linkedEnd: 0
   music: {fileID: 1447550077}
   sprt_note: {fileID: 2718262678537108838, guid: f839344064339514c9cc6fc3fb1e906b, type: 3}
 --- !u!4 &1447550076
@@ -1106,6 +1123,7 @@ MonoBehaviour:
   myCond: {fileID: 1447550074}
   myNS: {fileID: 840529156}
   myCharacter: {fileID: 1118251429}
+  myPlayerController: {fileID: 2123526457}
   range: 0.3
 --- !u!4 &1774577788
 Transform:

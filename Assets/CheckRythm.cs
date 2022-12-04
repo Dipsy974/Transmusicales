@@ -6,7 +6,8 @@ public class CheckRythm : MonoBehaviour
 {
     public Conductor myCond;
     public NoteSpawner myNS;
-    public CharacterMovement myCharacter; 
+    public CharacterMovement myCharacter;
+    public PlayerController myPlayerController; 
     private int compteur = 0;
     private KeyBeats currentNote;
     public float range; 
@@ -35,6 +36,11 @@ public class CheckRythm : MonoBehaviour
             if (Approximation(myCond.songPositionInBeats, currentNote.keyPosition))
             {
                 myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
+
+                if (currentNote.linkedStart)
+                {
+                    myCharacter.freeMode = true;
+                }
             }
         }  
     }
