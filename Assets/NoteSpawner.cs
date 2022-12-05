@@ -9,6 +9,8 @@ public class NoteSpawner : MonoBehaviour
     public Sinewave[] myCurves;
     public GameObject sprt_note;
     public List<GameObject> listNotes; 
+    public List<GameObject> listNotesLinkedStart; 
+    public List<LineRenderer> listLinks; 
 
     // Start is called before the first frame update
     void Start()
@@ -36,23 +38,6 @@ public class NoteSpawner : MonoBehaviour
         }
 
 
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Song selectedSong = myCond.selectedSong;
-
-        for (int i = 0; i < listNotes.Count; i++)
-        {
-            Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
-            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes-1)) / (int)myCond.songBpm);
-            listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos);
-        }
-
-
         //Link les notes entre elles
         for (int i = 0; i < selectedSong.keyBeats.Length; i++)
         {
@@ -68,9 +53,38 @@ public class NoteSpawner : MonoBehaviour
                 lr.SetWidth(0.1f, 0.1f);
                 lr.SetPosition(0, startLine);
                 lr.SetPosition(1, endLine);
-            }
 
-           
+                listNotesLinkedStart.Add(listNotes[i]); 
+                listLinks.Add(lr); 
+
+            }
         }
+
+
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Song selectedSong = myCond.selectedSong;
+
+        for (int i = 0; i < listNotes.Count; i++)
+        {
+            Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
+            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes-1)) / (int)myCond.songBpm);
+            listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos);
+    
+        }
+
+        for(int i = 0; i < listNotesLinkedStart.Count; i++)
+        {
+            listLinks[i].SetPosition(0, listNotesLinkedStart[i].transform.position);
+            listLinks[i].SetPosition(1, listNotes[listNotes.IndexOf(listNotesLinkedStart[i])+ 1].transform.position);
+        }
+
+
+
     }
 }

@@ -45,7 +45,10 @@ public class CheckRythm : MonoBehaviour
         }  
     }
 
-    
+    public void CheckCorridor()
+    {
+        
+    }
 
     bool Approximation(float value, float secondvalue)
     {
