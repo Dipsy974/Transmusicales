@@ -29,4 +29,10 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
+    public void WebPage(string webpage)
+    {
+
+        Application.OpenURL(webpage);
+    }
+
 }
