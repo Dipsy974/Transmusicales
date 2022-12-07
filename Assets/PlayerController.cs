@@ -30,7 +30,11 @@ public class PlayerController : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
   
-            myCheck.CheckNote(); //check if note is pressed 
+            if(touch.phase == TouchPhase.Began)
+            {
+                myCheck.CheckNote(); //check if note is pressed 
+            }
+            
             
             if (myCharacter.freeMode)
             {

@@ -9,5 +9,16 @@ public class KeyBeats
     public int line;
     public bool linkedStart;
     public bool linkedEnd; 
+    private bool isChecked = false;
+
+    public void CheckKey()
+    {
+        isChecked = true; 
+    }
+
+    public bool GetCheck()
+    {
+        return isChecked;
+    }
 }
 

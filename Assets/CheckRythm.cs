@@ -7,7 +7,8 @@ public class CheckRythm : MonoBehaviour
     public Conductor myCond;
     public NoteSpawner myNS;
     public CharacterMovement myCharacter;
-    public PlayerController myPlayerController; 
+    public PlayerController myPlayerController;
+    public DefeatManager myDefM; 
     private int compteur = 0;
     private KeyBeats currentNote;
     public float range; 
@@ -22,8 +23,12 @@ public class CheckRythm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.5f && compteur < myCond.notes.Length - 1)
+        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.5f && compteur < myCond.notes.Length - 1) //Actualise la note à checker
         {
+            if (!currentNote.GetCheck())
+            {
+                myDefM.DecreaseScore(); 
+            }
             compteur++;
             currentNote = myCond.notes[compteur];
         }
@@ -36,6 +41,9 @@ public class CheckRythm : MonoBehaviour
             if (Approximation(myCond.songPositionInBeats, currentNote.keyPosition))
             {
                 myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
+
+                myDefM.IncreaseScore();
+                currentNote.CheckKey(); 
 
                 if (currentNote.linkedStart)
                 {
