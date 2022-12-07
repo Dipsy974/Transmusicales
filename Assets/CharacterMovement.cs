@@ -13,6 +13,7 @@ public class CharacterMovement : MonoBehaviour
     private int compteur = 0;
     public int pathIndex = 1;
     public bool freeMode = false;
+    private bool isInCorridor = false; 
 
 
 
@@ -124,5 +125,20 @@ public class CharacterMovement : MonoBehaviour
         curve = closestCurve; 
         startPos = curve.myLR.GetPosition(0);
         finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
+    }
+
+    public bool GetIsInCorridor()
+    {
+        return isInCorridor; 
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        isInCorridor = true; 
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isInCorridor = false;
     }
 }

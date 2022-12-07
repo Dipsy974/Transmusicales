@@ -10,7 +10,8 @@ public class NoteSpawner : MonoBehaviour
     public GameObject sprt_note;
     public List<GameObject> listNotes; 
     public List<GameObject> listNotesLinkedStart; 
-    public List<LineRenderer> listLinks; 
+    public List<GameObject> listLinks;
+    public Material corridorMat; 
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class NoteSpawner : MonoBehaviour
         }
 
 
-        //Link les notes entre elles
+        //Link les notes entre elles : Corridors
         for (int i = 0; i < selectedSong.keyBeats.Length; i++)
         {
             if (selectedSong.keyBeats[i].linkedStart)
@@ -49,13 +50,23 @@ public class NoteSpawner : MonoBehaviour
                 GameObject myLine = new GameObject();
                 myLine.transform.position = startLine;
                 myLine.AddComponent<LineRenderer>();
+                myLine.AddComponent<EdgeCollider2D>();
+                myLine.GetComponent<EdgeCollider2D>().isTrigger = true;
                 LineRenderer lr = myLine.GetComponent<LineRenderer>();
-                lr.SetWidth(0.1f, 0.1f);
+
+                lr.startWidth = 5f;
+                lr.endWidth = 5f;
+                lr.startColor = Color.magenta;
+                lr.endColor = Color.magenta;
+
+                lr.material = corridorMat; 
                 lr.SetPosition(0, startLine);
                 lr.SetPosition(1, endLine);
 
                 listNotesLinkedStart.Add(listNotes[i]); 
-                listLinks.Add(lr); 
+                listLinks.Add(myLine);
+
+                SetCorridorCollider(myLine); //Initalise les colliders de la ligne
 
             }
         }
@@ -78,13 +89,33 @@ public class NoteSpawner : MonoBehaviour
     
         }
 
-        for(int i = 0; i < listNotesLinkedStart.Count; i++)
+        for(int i = 0; i < listNotesLinkedStart.Count; i++) //Update positions des corridors et leurs colliders
         {
-            listLinks[i].SetPosition(0, listNotesLinkedStart[i].transform.position);
-            listLinks[i].SetPosition(1, listNotes[listNotes.IndexOf(listNotesLinkedStart[i])+ 1].transform.position);
+            LineRenderer lr = listLinks[i].GetComponent<LineRenderer>();
+            lr.SetPosition(0, listNotesLinkedStart[i].transform.position);
+            lr.SetPosition(1, listNotes[listNotes.IndexOf(listNotesLinkedStart[i])+ 1].transform.position);
+
+            SetCorridorCollider(listLinks[i]); //Update les colliders de la line
         }
 
 
 
+    }
+
+    public void SetCorridorCollider(GameObject line)
+    {
+        LineRenderer lr = line.GetComponent<LineRenderer>();
+        EdgeCollider2D edgeCollider = line.GetComponent<EdgeCollider2D>();
+        Transform lineTransform = lr.transform;
+
+        List<Vector2> edges = new List<Vector2>();
+
+        for(int point = 0; point < lr.positionCount; point++)
+        {
+            Vector3 lineRendererPoint = lr.GetPosition(point);
+            edges.Add(new Vector2(lineRendererPoint.x - lineTransform.position.x, lineRendererPoint.y - lineTransform.position.y)); 
+        }
+
+        edgeCollider.SetPoints(edges); 
     }
 }

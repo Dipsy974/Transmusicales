@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DefeatManager : MonoBehaviour
 {
-    public int globalScore;
-    private int currentScore; 
-    public int scorePerMiss;
-    public int scorePerHit;
+    public float globalScore;
+    private float currentScore; 
+    public float scorePerMiss;
+    public float scorePerHit;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class DefeatManager : MonoBehaviour
 
     public void IncreaseScore()
     {
-        currentScore += scorePerHit;
+        currentScore += scorePerHit * Time.deltaTime;
         if (currentScore > globalScore)
         {
             currentScore = globalScore; 

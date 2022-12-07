@@ -22,7 +22,7 @@ MonoBehaviour:
     linkedStart: 1
     linkedEnd: 0
   - keyPosition: 6
-    line: 2
+    line: 1
     linkedStart: 0
     linkedEnd: 1
   - keyPosition: 8
@@ -39,5 +39,9 @@ MonoBehaviour:
     linkedEnd: 1
   - keyPosition: 18
     line: 2
+    linkedStart: 1
+    linkedEnd: 1
+  - keyPosition: 19
+    line: 0
     linkedStart: 0
     linkedEnd: 1

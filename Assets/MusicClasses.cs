@@ -9,7 +9,9 @@ public class KeyBeats
     public int line;
     public bool linkedStart;
     public bool linkedEnd; 
-    private bool isChecked = false;
+
+    [System.NonSerialized]
+    public bool isChecked = false;
 
     public void CheckKey()
     {

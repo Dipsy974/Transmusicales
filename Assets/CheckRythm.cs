@@ -23,14 +23,30 @@ public class CheckRythm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.5f && compteur < myCond.notes.Length - 1) //Actualise la note à checker
+        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.5f && compteur < myCond.notes.Length) //Actualise la note à checker
         {
-            if (!currentNote.GetCheck())
+            Debug.Log(currentNote.GetCheck());
+            if (!currentNote.GetCheck() && !currentNote.linkedEnd)
             {
                 myDefM.DecreaseScore(); 
             }
-            compteur++;
-            currentNote = myCond.notes[compteur];
+
+            if(currentNote.linkedEnd && !currentNote.linkedStart) //Désactive le freemode à la fin d'un corridor
+            {
+                myCharacter.freeMode = false;
+                myCharacter.SnapToClosestLine();
+            }
+
+            if(compteur < myCond.notes.Length - 1) //Cap le compteur et la current note à la longueur de la liste -1 
+            {
+                compteur++;
+                currentNote = myCond.notes[compteur];
+            }      
+        }
+
+        if (myCharacter.freeMode)
+        {
+            CheckCorridor(); 
         }
     }
 
@@ -38,16 +54,21 @@ public class CheckRythm : MonoBehaviour
     {
         if(myCharacter.pathIndex == myCond.notes[compteur].line) //Seulement si le personnage est sur la bonne ligne
         {
-            if (Approximation(myCond.songPositionInBeats, currentNote.keyPosition))
+            if (Approximation(myCond.songPositionInBeats, currentNote.keyPosition) && !currentNote.linkedEnd)
             {
-                myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
-
-                myDefM.IncreaseScore();
-                currentNote.CheckKey(); 
+                currentNote.CheckKey();
 
                 if (currentNote.linkedStart)
                 {
                     myCharacter.freeMode = true;
+                 
+                }
+                else
+                {
+                    myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
+
+                    myDefM.IncreaseScore();
+                   
                 }
             }
         }  
@@ -55,7 +76,10 @@ public class CheckRythm : MonoBehaviour
 
     public void CheckCorridor()
     {
-        
+        if (myCharacter.GetIsInCorridor())
+        {
+            myDefM.IncreaseScore();
+        }
     }
 
     bool Approximation(float value, float secondvalue)
