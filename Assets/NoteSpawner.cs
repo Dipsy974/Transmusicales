@@ -38,6 +38,14 @@ public class NoteSpawner : MonoBehaviour
             listNotes.Add(note);
         }
 
+        for (int i = 0; i < selectedSong.keyBeats.Length; i++)
+        {
+            if(selectedSong.keyBeats[i].linkedStart || selectedSong.keyBeats[i].linkedEnd)
+            {
+                listNotes[i].GetComponent<SpriteRenderer>().material.SetColor("_MainColor", Color.magenta); 
+            }
+        }
+
 
         //Link les notes entre elles : Corridors
         for (int i = 0; i < selectedSong.keyBeats.Length; i++)
@@ -71,6 +79,7 @@ public class NoteSpawner : MonoBehaviour
             }
         }
 
+      
 
 
 

@@ -8,7 +8,8 @@ public class CheckRythm : MonoBehaviour
     public NoteSpawner myNS;
     public CharacterMovement myCharacter;
     public PlayerController myPlayerController;
-    public DefeatManager myDefM; 
+    public DefeatManager myDefM;
+    public ParticleSystem corridorParticles; 
     private int compteur = 0;
     private KeyBeats currentNote;
     public float range; 
@@ -37,16 +38,20 @@ public class CheckRythm : MonoBehaviour
                 myCharacter.SnapToClosestLine();
             }
 
-            if(compteur < myCond.notes.Length - 1) //Cap le compteur et la current note à la longueur de la liste -1 
-            {
-                compteur++;
-                currentNote = myCond.notes[compteur];
-            }      
+        
+            
+            compteur++;
+            currentNote = myCond.notes[compteur];
+                
         }
 
         if (myCharacter.freeMode)
         {
-            CheckCorridor(); 
+            CheckCorridor();
+        }
+        else
+        {
+            corridorParticles.Stop();
         }
     }
 
@@ -78,7 +83,13 @@ public class CheckRythm : MonoBehaviour
     {
         if (myCharacter.GetIsInCorridor())
         {
+            corridorParticles.transform.position = myCharacter.transform.position; 
+            corridorParticles.Play(); 
             myDefM.IncreaseProgressScore();
+        }
+        else
+        {
+            corridorParticles.Stop();
         }
     }
 
