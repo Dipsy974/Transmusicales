@@ -5,7 +5,7 @@ using UnityEngine;
 public class DefeatManager : MonoBehaviour
 {
     public float globalScore;
-    private float currentScore; 
+    public float currentScore; 
     public float scorePerMiss;
     public float scorePerHit;
 
@@ -26,10 +26,21 @@ public class DefeatManager : MonoBehaviour
 
     public void IncreaseScore()
     {
-        currentScore += scorePerHit * Time.deltaTime;
+        currentScore += scorePerHit;
         if (currentScore > globalScore)
         {
             currentScore = globalScore; 
+        }
+
+        Debug.Log(currentScore);
+    }
+
+    public void IncreaseProgressScore()
+    {
+        currentScore += scorePerHit * Time.deltaTime;
+        if (currentScore > globalScore)
+        {
+            currentScore = globalScore;
         }
 
         Debug.Log(currentScore);
@@ -43,7 +54,7 @@ public class DefeatManager : MonoBehaviour
 
     public bool checkDefeat()
     {
-        if(globalScore <= 0)
+        if(currentScore <= 0)
         {
             return true;
         }

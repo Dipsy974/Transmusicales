@@ -78,7 +78,7 @@ public class CheckRythm : MonoBehaviour
     {
         if (myCharacter.GetIsInCorridor())
         {
-            myDefM.IncreaseScore();
+            myDefM.IncreaseProgressScore();
         }
     }
 
