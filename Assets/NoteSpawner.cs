@@ -33,7 +33,7 @@ public class NoteSpawner : MonoBehaviour
         for (int i = 0; i < selectedSong.keyBeats.Length; i++)
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
-            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1)) / (int)myCond.songBpm);
+            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
             GameObject note = (GameObject)Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) , Quaternion.identity);
             listNotes.Add(note);
         }
@@ -93,7 +93,7 @@ public class NoteSpawner : MonoBehaviour
         for (int i = 0; i < listNotes.Count; i++)
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
-            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes-1)) / (int)myCond.songBpm);
+            Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
             listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos);
     
         }

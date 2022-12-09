@@ -20,6 +20,7 @@ public class Conductor : MonoBehaviour
     public float songBpm;
     public KeyBeats[] notes;  
     public AudioSource music;
+    public float totalBeats; 
 
 
     //Note sprite
@@ -42,6 +43,10 @@ public class Conductor : MonoBehaviour
         dspSongTime = (float)AudioSettings.dspTime;
 
         secPerBeat = 60f / songBpm;
+
+        totalBeats = (songBpm * music.clip.length) / 60f;
+        Debug.Log(totalBeats); 
+       
 
         music.Play(); 
 

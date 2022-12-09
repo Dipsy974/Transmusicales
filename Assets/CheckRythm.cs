@@ -24,7 +24,7 @@ public class CheckRythm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.5f && compteur < myCond.notes.Length) //Actualise la note à checker
+        if(myCond.songPositionInBeats > currentNote.keyPosition + 0.2f && compteur < myCond.notes.Length) //Actualise la note à checker
         {
             Debug.Log(currentNote.GetCheck());
             if (!currentNote.GetCheck() && !currentNote.linkedEnd)
@@ -38,8 +38,7 @@ public class CheckRythm : MonoBehaviour
                 myCharacter.SnapToClosestLine();
             }
 
-        
-            
+
             compteur++;
             currentNote = myCond.notes[compteur];
                 

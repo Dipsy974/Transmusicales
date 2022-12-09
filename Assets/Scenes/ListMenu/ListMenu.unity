@@ -828,7 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songs:
-  - {fileID: 11400000, guid: 316753734a057b04bbff3979dcc716be, type: 2}
+  - {fileID: 11400000, guid: e4cae8d20de1d0e4fa98d27654b0589e, type: 2}
 --- !u!4 &859804056
 Transform:
   m_ObjectHideFlags: 0
@@ -989,7 +989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00021362305}
+  m_AnchoredPosition: {x: 0, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1217283435
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 341255237}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.845761
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
