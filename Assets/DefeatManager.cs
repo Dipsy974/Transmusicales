@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DefeatManager : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class DefeatManager : MonoBehaviour
     {
         if (checkDefeat())
         {
-            Debug.Log("Perdu"); 
+            SceneManager.LoadScene("DefeatScreen");
         }
     }
 
