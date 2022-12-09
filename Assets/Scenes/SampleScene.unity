@@ -155,11 +155,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCond: {fileID: 1447550074}
   myLR: {fileID: 268641268}
-  pointsRes: 1000
+  pointsRes: 3000
   pointsBeat: 0
   amplitude: 0.22
   frequency: 0.09
-  lineLimits: {x: 0, y: 179.28}
+  lineLimits: {x: 0, y: 1000}
 --- !u!120 &268641268
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5410,11 +5410,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCond: {fileID: 1447550074}
   myLR: {fileID: 791123878}
-  pointsRes: 1000
+  pointsRes: 3000
   pointsBeat: 0
   amplitude: 0.41
   frequency: 0.06
-  lineLimits: {x: 0, y: 179.28}
+  lineLimits: {x: 0, y: 1000}
 --- !u!120 &791123878
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5702,11 +5702,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCond: {fileID: 1447550074}
   myLR: {fileID: 1013241354}
-  pointsRes: 1000
+  pointsRes: 3000
   pointsBeat: 0
   amplitude: 0.28
   frequency: -0.05
-  lineLimits: {x: 0, y: 179.28}
+  lineLimits: {x: 0, y: 1000}
 --- !u!120 &1013241354
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6268,6 +6268,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
   music: {fileID: 1447550077}
+  totalBeats: 0
   sprt_note: {fileID: 2718262678537108838, guid: f839344064339514c9cc6fc3fb1e906b, type: 3}
 --- !u!4 &1447550076
 Transform:
@@ -6410,7 +6411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songs:
-  - {fileID: 11400000, guid: 316753734a057b04bbff3979dcc716be, type: 2}
+  - {fileID: 11400000, guid: e4cae8d20de1d0e4fa98d27654b0589e, type: 2}
 --- !u!4 &1710577856
 Transform:
   m_ObjectHideFlags: 0
@@ -6461,7 +6462,7 @@ MonoBehaviour:
   myPlayerController: {fileID: 2123526457}
   myDefM: {fileID: 1251405410}
   corridorParticles: {fileID: 444838540}
-  range: 0.3
+  range: 0.28
 --- !u!4 &1774577788
 Transform:
   m_ObjectHideFlags: 0

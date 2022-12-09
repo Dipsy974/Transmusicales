@@ -38,7 +38,7 @@ public class CharacterMovement : MonoBehaviour
         //);
 
         //nextNote = myCond.notes[compteur]; 
-        float progress = (myCond.songPositionInBeats) / myCond.songBpm;
+        float progress = (myCond.songPositionInBeats) / myCond.totalBeats;
         float y = Mathf.Lerp(startPos.y, finalPos.y, progress);
         float x = curve.amplitude * Mathf.Sin(y * 2 * Mathf.PI * curve.frequency);
         //float x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(y))) / Mathf.PI) - 1;
@@ -48,7 +48,7 @@ public class CharacterMovement : MonoBehaviour
             if (Approximation(transform.position.y, myNS.listNotes[compteur].transform.position.y))
             {
 
-                myNS.listNotes[compteur].GetComponent<SpriteRenderer>().color = Color.red;
+                myNS.listNotes[compteur].GetComponent<SpriteRenderer>().material.color = Color.red;
                 compteur++;
             }
         }
