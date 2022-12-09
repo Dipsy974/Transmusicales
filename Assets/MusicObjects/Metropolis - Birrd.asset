@@ -291,21 +291,9 @@ MonoBehaviour:
     linkedEnd: 0
   - keyPosition: 160
     line: 0
-    linkedStart: 0
-    linkedEnd: 1
-  - keyPosition: 161
-    line: 0
     linkedStart: 1
-    linkedEnd: 0
+    linkedEnd: 1
   - keyPosition: 167
-    line: 1
-    linkedStart: 0
-    linkedEnd: 1
-  - keyPosition: 168
-    line: 1
-    linkedStart: 1
-    linkedEnd: 0
-  - keyPosition: 174
     line: 1
     linkedStart: 0
     linkedEnd: 1
