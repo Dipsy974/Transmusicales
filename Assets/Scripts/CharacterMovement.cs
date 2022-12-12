@@ -42,10 +42,17 @@ public class CharacterMovement : MonoBehaviour
         //nextNote = myCond.notes[compteur]; 
         float progress = (myCond.songPositionInBeats) / myCond.totalBeats;
         float y = Mathf.Lerp(startPos.y, finalPos.y, progress);
-        float x = curve.amplitude * Mathf.Sin(y * 2 * Mathf.PI * curve.frequency);
-        //float x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(y))) / Mathf.PI) - 1;
+        float x = 0f;
+        if (myCond.selectedSong.planet == "blue")
+        {
+            x = curve.amplitude * Mathf.Sin(y * 2 * Mathf.PI * curve.frequency);
+        }
+        else if (myCond.selectedSong.planet == "yellow")
+        {
+            x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(y))) / Mathf.PI) - 1;
+        }
 
-        if (compteur < myNS.listNotes.Count)
+            if (compteur < myNS.listNotes.Count)
         {
             if (Approximation(transform.position.y, myNS.listNotes[compteur].transform.position.y))
             {
