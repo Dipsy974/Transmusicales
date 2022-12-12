@@ -13,7 +13,9 @@ public class CharacterMovement : MonoBehaviour
     private int compteur = 0;
     public int pathIndex = 1;
     public bool freeMode = false;
-    private bool isInCorridor = false; 
+    private bool isInCorridor = false;
+    private bool isTranslating = false;
+    private Vector3 target; 
 
 
 
@@ -57,6 +59,9 @@ public class CharacterMovement : MonoBehaviour
         if (!freeMode)
         {
             transform.position = curve.transform.TransformPoint(x, y, -1); //Suit la ligne
+        }else if (isTranslating)
+        {
+            Translate(target); 
         }
         else
         {
@@ -97,10 +102,11 @@ public class CharacterMovement : MonoBehaviour
             }
         }
 
-
         curve = curves[pathIndex];
         startPos = curve.myLR.GetPosition(0);
         finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
+        
+        isTranslating = true; 
     }
 
     public void FollowInput(Vector2 position)
@@ -140,5 +146,14 @@ public class CharacterMovement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isInCorridor = false;
+    }
+
+    private void Translate(Vector3 target)
+    {
+        transform.position = Vector3.MoveTowards(transform.position, target, 100);
+        if(transform.position == target)
+        {
+            isTranslating = false; 
+        }
     }
 }
