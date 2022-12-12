@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 1436702206260653786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.43976, y: 14}
+  m_SizeDelta: {x: 764, y: 136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4649545615355317257
 CanvasRenderer:
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1860903072328754713}
   - component: {fileID: 719647991634629266}
   - component: {fileID: 2013083028311978835}
-  - component: {fileID: 6437778132958948512}
+  - component: {fileID: 6847245681103672032}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -173,8 +173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.68969727, y: 32.1064}
-  m_SizeDelta: {x: 781.8782, y: 136.7846}
+  m_AnchoredPosition: {x: 0.0000047683716, y: 0}
+  m_SizeDelta: {x: 764.8795, y: 136.7846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1860903072328754713
 CanvasRenderer:
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c8c2ff41eaab0bc4796a9fabe4631b65, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -258,7 +258,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6437778132958948512}
+      - m_Target: {fileID: 6847245681103672032}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6847245681103672032}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: StartScene
         m_Mode: 1
@@ -270,7 +282,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6437778132958948512
+--- !u!114 &6847245681103672032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,3 +296,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedSong: {fileID: 0}
   attachedSong: {fileID: 0}
+  img: {fileID: 719647991634629266}
+  newSprite: {fileID: 21300000, guid: e2ac15683c1b7a14099b55f253cd88f1, type: 3}
