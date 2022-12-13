@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public Sinewave curve;
     public Conductor myCond;
     public NoteSpawner myNS;
+    public DefeatManager myDefeatManager;
     public int pathIndex = 1;
     public bool freeMode = false;
     public Transform parentTransform;
@@ -138,6 +139,14 @@ public class CharacterMovement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         _isInCorridor = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "obstacle")
+        {
+            myDefeatManager.DecreaseScore();
+        }
     }
 
 

@@ -6083,6 +6083,7 @@ MonoBehaviour:
   curve: {fileID: 791123877}
   myCond: {fileID: 1447550074}
   myNS: {fileID: 840529156}
+  myDefeatManager: {fileID: 1251405410}
   pathIndex: 1
   freeMode: 0
   parentTransform: {fileID: 0}
@@ -6292,34 +6293,42 @@ MonoBehaviour:
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 0
     line: 0
     linkedStart: 0
     linkedEnd: 0
+    isObstacle: 0
   music: {fileID: 1447550077}
   totalBeats: 0
   sprt_note: {fileID: 2718262678537108838, guid: f839344064339514c9cc6fc3fb1e906b, type: 3}
@@ -6530,6 +6539,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1782055341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782055343}
+  - component: {fileID: 1782055342}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1782055342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782055341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f074d188ba1c1ce4b89455ef8978c553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCond: {fileID: 1447550074}
+  myCurves:
+  - {fileID: 268641267}
+  - {fileID: 791123877}
+  - {fileID: 1013241353}
+  sprt_obstacle: {fileID: 8317322484096943522, guid: 1c1d8e6c9624e6c4ca89ac2d1df5cbf6, type: 3}
+  listObstacles: []
+--- !u!4 &1782055343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782055341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.4987803, y: 5.43173, z: -10.140574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804957584
 GameObject:

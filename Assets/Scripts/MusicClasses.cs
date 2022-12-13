@@ -8,7 +8,8 @@ public class KeyBeats
     public float keyPosition;
     public int line;
     public bool linkedStart;
-    public bool linkedEnd; 
+    public bool linkedEnd;
+    public bool isObstacle;
 
     [System.NonSerialized]
     public bool isChecked = false;
@@ -22,5 +23,14 @@ public class KeyBeats
     {
         return isChecked;
     }
+}
+
+
+[System.Serializable]
+public class Obstacles
+{
+    public float keyPosition;
+    public int line;
+
 }
 

@@ -12,5 +12,6 @@ public class Song : ScriptableObject
     public int bpm;
     public AudioClip audio;
     public KeyBeats[] keyBeats;
+    public Obstacles[] obstacles;
     
 }
