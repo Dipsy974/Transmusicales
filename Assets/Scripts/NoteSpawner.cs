@@ -34,7 +34,7 @@ public class NoteSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
             Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            GameObject note = (GameObject)Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) , Quaternion.identity);
+            GameObject note = (GameObject)Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) , Quaternion.identity, myCurves[selectedSong.keyBeats[i].line].transform);
             listNotes.Add(note);
         }
 

@@ -160,6 +160,8 @@ MonoBehaviour:
   amplitude: 0.22
   frequency: 1
   lineLimits: {x: 0, y: 1000}
+  startPos: {x: 0, y: 0, z: 0}
+  finalPos: {x: 0, y: 0, z: 0}
 --- !u!120 &268641268
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5415,6 +5417,8 @@ MonoBehaviour:
   amplitude: 0.41
   frequency: 1
   lineLimits: {x: 0, y: 1000}
+  startPos: {x: 0, y: 0, z: 0}
+  finalPos: {x: 0, y: 0, z: 0}
 --- !u!120 &791123878
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5515,7 +5519,7 @@ LineRenderer:
     textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 1
+  m_UseWorldSpace: 0
   m_Loop: 0
 --- !u!4 &791123879
 Transform:
@@ -5753,6 +5757,8 @@ MonoBehaviour:
   amplitude: 0.28
   frequency: 1
   lineLimits: {x: 0, y: 1000}
+  startPos: {x: 0, y: 0, z: 0}
+  finalPos: {x: 0, y: 0, z: 0}
 --- !u!120 &1013241354
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6050,7 +6056,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118251426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.2964, y: -0.7236, z: -0.93}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
@@ -6079,6 +6085,7 @@ MonoBehaviour:
   myNS: {fileID: 840529156}
   pathIndex: 1
   freeMode: 0
+  parentTransform: {fileID: 0}
 --- !u!61 &1118251430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6557,6 +6564,8 @@ MonoBehaviour:
   myChar: {fileID: 1118251429}
   amplitude: 2
   variationFrequency: 8
+  maxAmplitude: 0
+  minAmplitude: 0
   count: 0
 --- !u!4 &1804957586
 Transform:

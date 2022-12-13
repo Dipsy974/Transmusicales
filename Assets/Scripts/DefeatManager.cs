@@ -21,7 +21,7 @@ public class DefeatManager : MonoBehaviour
     {
         if (checkDefeat())
         {
-            SceneManager.LoadScene("DefeatScreen");
+            //SceneManager.LoadScene("DefeatScreen");
         }
     }
 

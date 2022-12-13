@@ -11,6 +11,10 @@ public class Sinewave : MonoBehaviour
     public float amplitude = 1;
     public float frequency = 1;
     public Vector2 lineLimits = new Vector2(0, 1);
+    public Vector3 startPos, finalPos;
+
+    public float ReturnActualY => transform.position.y * -1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +22,14 @@ public class Sinewave : MonoBehaviour
         pointsBeat = myCond.selectedSong.keyBeats.Length;
         myLR.positionCount = pointsRes;
 
+
         Draw();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        LineMovement();
         Draw();
     }
 
@@ -58,5 +63,17 @@ public class Sinewave : MonoBehaviour
             }
 
         }
+
+
+        startPos = myLR.GetPosition(0);
+        finalPos = -myLR.GetPosition(myLR.positionCount - 1);
     }
+
+
+    private void LineMovement()
+    {
+        var progress = (myCond.songPositionInBeats) / myCond.totalBeats;
+        transform.position = new Vector3(transform.position.x,Mathf.Lerp(startPos.y, finalPos.y, progress),transform.position.z);
+    }
+
 }

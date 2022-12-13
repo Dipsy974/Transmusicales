@@ -7,72 +7,61 @@ public class CharacterMovement : MonoBehaviour
     public Sinewave[] curves; 
     public Sinewave curve;
     public Conductor myCond;
-    public NoteSpawner myNS; 
-    private Vector3 startPos;
-    private Vector3 finalPos;
-    private int compteur = 0;
+    public NoteSpawner myNS;
     public int pathIndex = 1;
     public bool freeMode = false;
-    private bool isInCorridor = false;
-    private bool isTranslating = false;
-    private Vector3 target; 
-
+    public Transform parentTransform;
+    
+    
+    private int _compteur = 0;
+    private bool _isInCorridor = false;
+    private bool _isTranslating = false;
+    private Vector3 _target;
+    private Vector3 _targetPosition;
+    private float _x, _y;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        compteur = 0;
+        _compteur = 0;
         curve = curves[pathIndex]; 
-
-        transform.position = curve.myLR.GetPosition(0); //Initialisation au point de départ de la courbe
-        startPos = transform.position;
-        finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1); 
+        //transform.position = curve.myLR.GetPosition(0); //Initialisation au point de départ de la courbe
     }
-
     // Update is called once per frame
     void Update()
     {
-        //transform.position = Vector3.Lerp(
-        //startPos,
-        //curve.myLR.GetPosition((int)nextNote),
-        //(myCond.beatsShownInAdvance - (nextNote - myCond.songPositionInBeats)) / myCond.beatsShownInAdvance
-        //);
-
-        //nextNote = myCond.notes[compteur]; 
+       
         float progress = (myCond.songPositionInBeats) / myCond.totalBeats;
-        float y = Mathf.Lerp(startPos.y, finalPos.y, progress);
-        float x = 0f;
+        _y = curve.ReturnActualY;
+        _x = 0f;
+
         if (myCond.selectedSong.planet == "blue")
         {
-            x = curve.amplitude * Mathf.Sin(y * 2 * Mathf.PI * curve.frequency);
+            _x = curve.amplitude * Mathf.Sin(_y * 2 * Mathf.PI * curve.frequency);
         }
         else if (myCond.selectedSong.planet == "yellow")
         {
-            x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(y))) / Mathf.PI) - 1;
+            _x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(_y))) / Mathf.PI) - 1;
         }
 
-            if (compteur < myNS.listNotes.Count)
+            if (_compteur < myNS.listNotes.Count)
         {
-            if (Approximation(transform.position.y, myNS.listNotes[compteur].transform.position.y))
+            if (Approximation(transform.position.y, myNS.listNotes[_compteur].transform.position.y))
             {
 
-                myNS.listNotes[compteur].GetComponent<SpriteRenderer>().material.color = Color.red;
-                compteur++;
+                myNS.listNotes[_compteur].GetComponent<SpriteRenderer>().material.color = Color.red;
+                _compteur++;
             }
         }
 
-
+        if(!_isTranslating)
+        {
+            _targetPosition= curve.transform.TransformPoint(_x, _y, -1); //Suit la ligne
+        }
         if (!freeMode)
         {
-            transform.position = curve.transform.TransformPoint(x, y, -1); //Suit la ligne
-        }else if (isTranslating)
-        {
-            Translate(target); 
-        }
-        else
-        {
-            transform.position = new Vector3(transform.position.x, y, -1); // Ajuste le y aux déplacements du personnage gérés dans FollowInput
+            transform.position = _targetPosition; //Suit la ligne
         }
     }
 
@@ -109,11 +98,9 @@ public class CharacterMovement : MonoBehaviour
             }
         }
 
-        curve = curves[pathIndex];
-        startPos = curve.myLR.GetPosition(0);
-        finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
+        StartCoroutine(ChangeCurve(pathIndex));
         
-        isTranslating = true; 
+        _isTranslating = true; 
     }
 
     public void FollowInput(Vector2 position)
@@ -136,31 +123,34 @@ public class CharacterMovement : MonoBehaviour
         }
  
         curve = closestCurve; 
-        startPos = curve.myLR.GetPosition(0);
-        finalPos = curve.myLR.GetPosition(curve.myLR.positionCount - 1);
     }
 
     public bool GetIsInCorridor()
     {
-        return isInCorridor; 
+        return _isInCorridor; 
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        isInCorridor = true; 
+        _isInCorridor = true; 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isInCorridor = false;
+        _isInCorridor = false;
     }
 
-    private void Translate(Vector3 target)
+
+    private IEnumerator ChangeCurve(int targetCurve)
     {
-        transform.position = Vector3.MoveTowards(transform.position, target, 100);
-        if(transform.position == target)
+        float delta = 0;
+        while(delta<=1)
         {
-            isTranslating = false; 
+            delta += Time.deltaTime*3;
+            _targetPosition = Vector3.Lerp(curve.transform.TransformPoint(_x, _y, -1), curves[targetCurve].transform.TransformPoint(_x, _y, -1),delta);
+            yield return new WaitForEndOfFrame();
         }
+        _isTranslating = false;
+        curve = curves[targetCurve];
     }
 }
