@@ -158,7 +158,7 @@ MonoBehaviour:
   pointsRes: 3000
   pointsBeat: 0
   amplitude: 0.22
-  frequency: 1
+  frequency: 0.15
   lineLimits: {x: 0, y: 1000}
   startPos: {x: 0, y: 0, z: 0}
   finalPos: {x: 0, y: 0, z: 0}
@@ -5414,8 +5414,8 @@ MonoBehaviour:
   myLR: {fileID: 791123878}
   pointsRes: 3000
   pointsBeat: 0
-  amplitude: 0.41
-  frequency: 1
+  amplitude: -0.65
+  frequency: 0.09
   lineLimits: {x: 0, y: 1000}
   startPos: {x: 0, y: 0, z: 0}
   finalPos: {x: 0, y: 0, z: 0}
@@ -5755,7 +5755,7 @@ MonoBehaviour:
   pointsRes: 3000
   pointsBeat: 0
   amplitude: 0.28
-  frequency: 1
+  frequency: 0.09
   lineLimits: {x: 0, y: 1000}
   startPos: {x: 0, y: 0, z: 0}
   finalPos: {x: 0, y: 0, z: 0}
@@ -6562,10 +6562,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCond: {fileID: 1447550074}
   myChar: {fileID: 1118251429}
-  amplitude: 2
-  variationFrequency: 8
-  maxAmplitude: 0
-  minAmplitude: 0
+  amplitude: 1.05
+  variationFrequency: 16
+  maxAmplitude: 1.12
   count: 0
 --- !u!4 &1804957586
 Transform:

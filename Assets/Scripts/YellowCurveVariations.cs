@@ -6,14 +6,18 @@ public class YellowCurveVariations : MonoBehaviour
 {
     public Conductor myCond;
     public CharacterMovement myChar;
+
     public float amplitude = 1.1f;
-    public float variationFrequency;
-    public float maxAmplitude;
-    public float minAmplitude;
+    public float variationFrequency = 8f;
+    public float maxAmplitude = 1.8f;
+
     public int count = 2;
+
     float baseAmplitude;
     float savedBeat;
     Sinewave savedCurve;
+
+    bool isIncreasing = false;
 
 
     // Start is called before the first frame update
@@ -31,19 +35,43 @@ public class YellowCurveVariations : MonoBehaviour
             baseAmplitude = myChar.curve.amplitude;
             savedCurve = myChar.curve;
             savedBeat = myCond.songPositionInBeats;
-            Debug.Log("variation");
-            VariationTest(myChar.curve, amplitude);
+            isIncreasing = true;
             count++;
         }
 
-        if (myCond.songPositionInBeats >= savedBeat + 1)
+        if (isIncreasing)
         {
-            savedCurve.amplitude = baseAmplitude;
+            if (savedCurve.amplitude < maxAmplitude)
+            {
+                Debug.Log("increase");
+                Variation(myChar.curve, amplitude);
+            }
+            else
+            {
+                savedCurve.amplitude = maxAmplitude;
+            }
+        }
+        else {
+
+            if (savedCurve.amplitude > baseAmplitude)
+            {
+                Debug.Log("decrease");
+                Variation(myChar.curve, -amplitude);
+            }
+            else
+            {
+                savedCurve.amplitude = baseAmplitude;
+            }
+        }
+
+        if (myCond.songPositionInBeats >= savedBeat + 4)
+        {
+            isIncreasing = false;
         }
 
     }
 
-    public void VariationTest(Sinewave curve, float amplitude)
+    public void Variation(Sinewave curve, float amplitude)
     {
         curve.amplitude *= amplitude;
     }

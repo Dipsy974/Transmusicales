@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songName: Metropolis
   artistName: Birrd
-  planet: yellow
+  planet: blue
   bpm: 122
   audio: {fileID: 8300000, guid: 5ba780599682eac49b7cb6d4f4f0bc0f, type: 3}
   keyBeats:
