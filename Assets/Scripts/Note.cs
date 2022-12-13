@@ -5,7 +5,7 @@ using UnityEngine;
 public class Note : MonoBehaviour
 {
     public float yDistance;
-    public Transform outline, character;
+    public Transform outline;
     private bool doOnce;
     void Start()
     {
@@ -18,7 +18,8 @@ public class Note : MonoBehaviour
         {
             delta = transform.position.y / yDistance;
 
-            outline.localScale = Vector3.one * Mathf.Lerp(1, 2,delta ); 
+            outline.localScale = Vector3.one * Mathf.Lerp(0.66f, 1.24f,delta );
+            //outline.GetComponent<SpriteRenderer>().material.color.a = Mathf.Lerp(0.66f, 1.24f, delta); 
         }
     }
 }

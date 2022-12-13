@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c26029f5d8d251f4e8ae806e5f2992bc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 357dcc0873186e2439e31a6c4c81105b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -42,5 +42,5 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     m_Colors:
-    - _MainColor: {r: 2.684233, g: 0, b: 0.050009895, a: 0}
+    - _MainColor: {r: 2.1806247, g: 3.4590676, b: 3.583662, a: 0}
   m_BuildTextureStacks: []
