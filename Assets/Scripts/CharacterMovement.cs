@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public int pathIndex = 1;
     public bool freeMode = false;
     public Transform parentTransform;
+    public Animator animator;
     
     
     private int _compteur = 0;
@@ -153,13 +154,20 @@ public class CharacterMovement : MonoBehaviour
     private IEnumerator ChangeCurve(int targetCurve)
     {
         float delta = 0;
-        while(delta<=1)
+        var oldCurve = curve;
+        curve = curves[targetCurve];
+
+        var orig = oldCurve.transform.TransformPoint(_x, _y, -1);
+
+
+        animator.SetTrigger("ChangeLine");
+        while (delta<=1)
         {
             delta += Time.deltaTime*3;
-            _targetPosition = Vector3.Lerp(curve.transform.TransformPoint(_x, _y, -1), curves[targetCurve].transform.TransformPoint(_x, _y, -1),delta);
+            var dest = curve.transform.TransformPoint(_x, _y, -1);
+            _targetPosition = Vector3.Lerp(orig, dest,delta);
             yield return new WaitForEndOfFrame();
         }
         _isTranslating = false;
-        curve = curves[targetCurve];
     }
 }

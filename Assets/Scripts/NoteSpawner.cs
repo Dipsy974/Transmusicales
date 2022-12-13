@@ -7,12 +7,13 @@ public class NoteSpawner : MonoBehaviour
  
     public Conductor myCond;
     public Sinewave[] myCurves;
-    public GameObject sprt_note;
-    public List<GameObject> listNotes; 
-    public List<GameObject> listNotesLinkedStart; 
+    public Note sprt_note;
+    public List<Note> listNotes; 
+    public List<Note> listNotesLinkedStart; 
     public List<GameObject> listLinks;
-    public Material corridorMat; 
-
+    public Material corridorMat;
+    [Range(0.01f,1f)]
+    public float noteScale =.31f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,8 @@ public class NoteSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
             Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            GameObject note = (GameObject)Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) , Quaternion.identity, myCurves[selectedSong.keyBeats[i].line].transform);
+            Note note = Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) , Quaternion.identity, myCurves[selectedSong.keyBeats[i].line].transform);
+            note.transform.localScale = Vector3.one * noteScale;
             listNotes.Add(note);
         }
 
@@ -127,4 +129,5 @@ public class NoteSpawner : MonoBehaviour
 
         edgeCollider.SetPoints(edges); 
     }
+
 }
