@@ -17,6 +17,141 @@ MonoBehaviour:
   planet: blue
   bpm: 121
   audio: {fileID: 8300000, guid: 7e19712fda9cede4aa63b892e77859c6, type: 3}
-  keyBeats: []
+  keyBeats:
+  - keyPosition: 9
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 13
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 16.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 20.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 34.4
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 37.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 40.4
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 43
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 44.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 46
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 48.6
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 69
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 71
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 73
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 75
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 77
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 79
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 87
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 120
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
   obstacles: []
-  collectibles: []
+  collectibles:
+  - keyPosition: 11
+    line: 1
+  - keyPosition: 24
+    line: 2
+  - keyPosition: 26
+    line: 1
+  - keyPosition: 28
+    line: 0
+  - keyPosition: 30
+    line: 1
+  - keyPosition: 32
+    line: 2
+  - keyPosition: 51
+    line: 0
+  - keyPosition: 55
+    line: 0
+  - keyPosition: 57
+    line: 1
+  - keyPosition: 55
+    line: 0
+  - keyPosition: 59
+    line: 1
+  - keyPosition: 61
+    line: 2
+  - keyPosition: 63
+    line: 1
+  - keyPosition: 65
+    line: 2
+  - keyPosition: 67
+    line: 1
+  - keyPosition: 80
+    line: 1
+  - keyPosition: 82
+    line: 1
+  - keyPosition: 84
+    line: 1
+  - keyPosition: 85
+    line: 1
+  - keyPosition: 86
+    line: 1
