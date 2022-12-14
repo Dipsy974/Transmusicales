@@ -34,3 +34,11 @@ public class Obstacles
 
 }
 
+[System.Serializable]
+public class Collectibles
+{
+    public float keyPosition;
+    public int line;
+
+}
+

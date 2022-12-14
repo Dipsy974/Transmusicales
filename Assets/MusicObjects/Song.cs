@@ -13,5 +13,6 @@ public class Song : ScriptableObject
     public AudioClip audio;
     public KeyBeats[] keyBeats;
     public Obstacles[] obstacles;
+    public Collectibles[] collectibles;
     
 }

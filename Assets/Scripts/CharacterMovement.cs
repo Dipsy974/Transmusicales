@@ -147,8 +147,15 @@ public class CharacterMovement : MonoBehaviour
         if(collision.tag == "obstacle")
         {
             myDefeatManager.DecreaseScore();
+            collision.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if(collision.tag == "collectible")
+        {
+            myDefeatManager.IncreaseScore();
+            collision.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
+
 
 
     private IEnumerator ChangeCurve(int targetCurve)
