@@ -656,6 +656,11 @@ MonoBehaviour:
   audioSource: {fileID: 195239056}
   allClips:
   - {fileID: 11400000, guid: e4cae8d20de1d0e4fa98d27654b0589e, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   dropdown: {fileID: 1765508137}
   slider: {fileID: 2012607684}
   inputField: {fileID: 1830161187}

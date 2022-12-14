@@ -6610,6 +6610,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songs:
   - {fileID: 11400000, guid: e4cae8d20de1d0e4fa98d27654b0589e, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &1710577856
 Transform:
   m_ObjectHideFlags: 0
