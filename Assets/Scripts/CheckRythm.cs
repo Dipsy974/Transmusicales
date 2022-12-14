@@ -61,7 +61,6 @@ public class CheckRythm : MonoBehaviour
         {
             if (Approximation(myCond.songPositionInBeats, currentNote.keyPosition) && !currentNote.linkedEnd)
             {
-                currentNote.CheckKey();
 
                 if (currentNote.linkedStart)
                 {
@@ -70,15 +69,21 @@ public class CheckRythm : MonoBehaviour
                 }
                 else
                 {
-                    myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
-                    myNS.listNotes[compteur].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+                    if (!currentNote.isChecked)
+                    {
+                        myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
+                        myNS.listNotes[compteur].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
 
-                    myDefM.IncreaseScore();
+                        myDefM.IncreaseScore();
 
-                    myScoreM.AccuracyPoints(myCond.songPositionInBeats, currentNote.keyPosition);
+                        myScoreM.AccuracyPoints(myCond.songPositionInBeats, currentNote.keyPosition);
+                    }
 
-                   
                 }
+
+                currentNote.CheckKey();
+
+
             }
         }  
     }
