@@ -17,6 +17,75 @@ MonoBehaviour:
   planet: blue
   bpm: 123
   audio: {fileID: 8300000, guid: 983e6c098844e5f4680c9608b7be6412, type: 3}
-  keyBeats: []
+  keyBeats:
+  - keyPosition: 28
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 30
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 32
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 36
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 38
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 40
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 42
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 44
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 46
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
   obstacles: []
-  collectibles: []
+  collectibles:
+  - keyPosition: 4
+    line: 1
+  - keyPosition: 6
+    line: 1
+  - keyPosition: 8
+    line: 1
+  - keyPosition: 12
+    line: 2
+  - keyPosition: 14
+    line: 2
+  - keyPosition: 16
+    line: 2
+  - keyPosition: 20
+    line: 0
+  - keyPosition: 22
+    line: 0
+  - keyPosition: 24
+    line: 0
+  - keyPosition: 50
+    line: 1
+  - keyPosition: 52
+    line: 1
+  - keyPosition: 54
+    line: 1

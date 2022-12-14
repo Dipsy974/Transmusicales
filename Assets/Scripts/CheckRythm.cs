@@ -9,6 +9,7 @@ public class CheckRythm : MonoBehaviour
     public CharacterMovement myCharacter;
     public PlayerController myPlayerController;
     public DefeatManager myDefM;
+    public ScoreManager myScoreM;
     public ParticleSystem corridorParticles; 
     private int compteur = 0;
     private KeyBeats currentNote;
@@ -73,6 +74,9 @@ public class CheckRythm : MonoBehaviour
                     myNS.listNotes[compteur].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
 
                     myDefM.IncreaseScore();
+
+                    myScoreM.AccuracyPoints(myCond.songPositionInBeats, currentNote.keyPosition);
+
                    
                 }
             }
