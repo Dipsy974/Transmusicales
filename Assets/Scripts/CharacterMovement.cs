@@ -9,12 +9,15 @@ public class CharacterMovement : MonoBehaviour
     public Conductor myCond;
     public NoteSpawner myNS;
     public DefeatManager myDefeatManager;
+    public ScoreManager myScoreManager;
     public int pathIndex = 1;
     public bool freeMode = false;
     public Transform parentTransform;
     public Animator animator;
-    
-    
+    public float scoreDecreaseOnHit;
+    public float scoreIncreaseOnCollect;
+
+
     private int _compteur = 0;
     private bool _isInCorridor = false;
     private bool _isTranslating = false;
@@ -147,11 +150,13 @@ public class CharacterMovement : MonoBehaviour
         if(collision.tag == "obstacle")
         {
             myDefeatManager.DecreaseScore();
+            myScoreManager.DecreasePoints(scoreDecreaseOnHit);
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
         else if(collision.tag == "collectible")
         {
             myDefeatManager.IncreaseScore();
+            myScoreManager.IncreasePoints(scoreIncreaseOnCollect);
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
