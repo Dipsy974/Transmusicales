@@ -1,0 +1,377 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f317c32ae6bfd9c468c26e36260f338c, type: 3}
+  m_Name: Metropolis
+  m_EditorClassIdentifier: 
+  songName: Metropolis
+  artistName: Birrd
+  planet: blue
+  bpm: 122
+  audio: {fileID: 8300000, guid: 5ba780599682eac49b7cb6d4f4f0bc0f, type: 3}
+  keyBeats:
+  - keyPosition: 7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 11
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 15
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 19
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 23
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 27
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 31
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 35
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 39
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 43
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 47
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 51
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 55
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 59
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 63
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 65
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 67
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 69
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 71
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 72
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 73
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 74
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 75
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 76
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 77
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 79
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 80
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 81
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 82
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 83
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 84
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 85
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 86
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 88
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 89
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 90
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 91
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 92
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 93
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 94
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 95
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 97
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 98
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 99
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 100
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 101
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 102
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 103
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 104
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 106
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 108
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 110
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 112
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 114
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 116
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 118
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 120
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 122
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 124
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 126
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 128
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 130
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 132
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 134
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 136
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 144
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 148
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 152
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 160
+    line: 0
+    linkedStart: 1
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 167
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  obstacles:
+  - keyPosition: 12
+    line: 1
+  - keyPosition: 20
+    line: 1
+  - keyPosition: 22
+    line: 1
