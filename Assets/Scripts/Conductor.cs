@@ -14,7 +14,7 @@ public class Conductor : MonoBehaviour
     public float songPosition;
     public float songPositionInBeats;
     public float dspSongTime;
-    public float firstBeatOffset;
+    public float timerSetter; 
 
     //Song Info
     public float songBpm;
@@ -55,7 +55,8 @@ public class Conductor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
+        
+        songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
         songPositionInBeats = songPosition / secPerBeat; 
 

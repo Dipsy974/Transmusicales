@@ -9,7 +9,8 @@ public class Note : MonoBehaviour
     private bool doOnce;
     void Start()
     {
-        
+      outline.GetComponent<SpriteRenderer>().material.SetFloat("_MainAlpha", 0f);
+       
     }
     public float delta;
     void Update()
@@ -19,7 +20,9 @@ public class Note : MonoBehaviour
             delta = transform.position.y / yDistance;
 
             outline.localScale = Vector3.one * Mathf.Lerp(0.66f, 1.24f,delta );
-            //outline.GetComponent<SpriteRenderer>().material.color.a = Mathf.Lerp(0.66f, 1.24f, delta); 
+            outline.GetComponent<SpriteRenderer>().material.SetFloat("_MainAlpha", 1 - delta);
+     
+      
         }
     }
 }
