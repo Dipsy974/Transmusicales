@@ -16,6 +16,7 @@ MonoBehaviour:
   artistName: Birrd
   planet: blue
   bpm: 121
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 7e19712fda9cede4aa63b892e77859c6, type: 3}
   keyBeats: []
   obstacles: []
+  collectibles: []

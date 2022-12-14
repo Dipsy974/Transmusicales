@@ -656,11 +656,11 @@ MonoBehaviour:
   audioSource: {fileID: 195239056}
   allClips:
   - {fileID: 11400000, guid: e4cae8d20de1d0e4fa98d27654b0589e, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 263274ea0d46ddb4cb5fa716d303d030, type: 2}
+  - {fileID: 11400000, guid: 828ba7ddcbd1bac498fb22f41fb2ab94, type: 2}
+  - {fileID: 11400000, guid: d01160d4c8e29d04eb90eedb0ed2fd8e, type: 2}
+  - {fileID: 11400000, guid: 16649ee3e755e74429c43109ef15df47, type: 2}
+  - {fileID: 11400000, guid: aa4da831be474e24681d930ac071552b, type: 2}
   dropdown: {fileID: 1765508137}
   slider: {fileID: 2012607684}
   inputField: {fileID: 1830161187}

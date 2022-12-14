@@ -16,6 +16,7 @@ MonoBehaviour:
   artistName: Freak It Out
   planet: blue
   bpm: 166
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 34e83337a17e6c14fb86047a682ee153, type: 3}
   keyBeats: []
   obstacles: []
+  collectibles: []

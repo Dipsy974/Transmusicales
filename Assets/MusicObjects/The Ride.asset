@@ -16,6 +16,7 @@ MonoBehaviour:
   artistName: Eighty
   planet: blue
   bpm: 123
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 983e6c098844e5f4680c9608b7be6412, type: 3}
   keyBeats: []
   obstacles: []
+  collectibles: []
