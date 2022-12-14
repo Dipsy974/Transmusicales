@@ -6749,7 +6749,7 @@ MonoBehaviour:
   myPlayerController: {fileID: 2123526457}
   myDefM: {fileID: 1251405410}
   corridorParticles: {fileID: 444838540}
-  range: 0.28
+  range: 0.39
 --- !u!4 &1774577788
 Transform:
   m_ObjectHideFlags: 0
