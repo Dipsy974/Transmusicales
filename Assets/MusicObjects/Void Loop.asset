@@ -28,12 +28,22 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 17
+  - keyPosition: 16.5
     line: 2
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 20.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 24
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 30.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
@@ -58,12 +68,32 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 45
+  - keyPosition: 45.5
     line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 48
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 49.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 60.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 62.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 64.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
@@ -89,64 +119,508 @@ MonoBehaviour:
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 77
-    line: 0
+    line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 79
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 81
     line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 87
+  - keyPosition: 83
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 87.1
     line: 1
     linkedStart: 1
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 120
+  - keyPosition: 93.5
     line: 1
     linkedStart: 0
     linkedEnd: 1
     isObstacle: 0
-  obstacles: []
-  collectibles:
-  - keyPosition: 11
+  - keyPosition: 95.2
     line: 1
-  - keyPosition: 24
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 103.2
+    line: 0
+    linkedStart: 1
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 111.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 119
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 125
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 127.5
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 134
     line: 2
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 135.5
+    line: 2
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 141.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 143
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 150
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 154.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 159.5
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 164.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 168.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 171
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 173
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 174
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 176
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 178
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 180
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 182
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 184
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 186
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 188
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 190
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 196
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 198
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 200
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 202
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 204
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 206
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 208
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 210
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 212
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 214
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 216
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 218
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 220
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 222
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 224
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 226
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 228
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 230
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 232
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 234
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 236
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 238
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 240
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 246
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 248
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 250
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 252
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 254
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 256
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 258
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 258
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 260
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 262
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 264
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 266
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 268
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 286
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 288
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 290
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 292
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 294
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 296
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 298
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 300
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 302
+    line: 2
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 308
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  obstacles:
+  - keyPosition: 52.2
+    line: 1
+  - keyPosition: 54
+    line: 2
+  - keyPosition: 55.5
+    line: 0
+  - keyPosition: 55.5
+    line: 2
+  - keyPosition: 59
+    line: 1
+  - keyPosition: 59
+    line: 2
+  - keyPosition: 65
+    line: 2
+  - keyPosition: 66
+    line: 1
+  - keyPosition: 180
+    line: 1
+  - keyPosition: 184
+    line: 1
+  - keyPosition: 207
+    line: 0
+  - keyPosition: 207
+    line: 1
+  - keyPosition: 216
+    line: 0
+  - keyPosition: 216
+    line: 2
+  - keyPosition: 218
+    line: 0
+  - keyPosition: 218
+    line: 2
+  - keyPosition: 220
+    line: 0
+  - keyPosition: 220
+    line: 2
+  - keyPosition: 222
+    line: 0
+  - keyPosition: 222
+    line: 1
+  - keyPosition: 224
+    line: 0
+  - keyPosition: 224
+    line: 1
+  - keyPosition: 226
+    line: 0
+  - keyPosition: 226
+    line: 1
+  - keyPosition: 260
+    line: 0
+  - keyPosition: 260
+    line: 2
+  - keyPosition: 310
+    line: 0
+  - keyPosition: 310
+    line: 1
+  - keyPosition: 310
+    line: 2
+  - keyPosition: 311
+    line: 0
+  - keyPosition: 311
+    line: 1
+  - keyPosition: 311
+    line: 2
+  collectibles:
+  - keyPosition: 11.3
+    line: 1
   - keyPosition: 26
     line: 1
   - keyPosition: 27
     line: 0
-  - keyPosition: 30
+  - keyPosition: 38
+    line: 0
+  - keyPosition: 51.2
     line: 1
-  - keyPosition: 32
+  - keyPosition: 51.7
     line: 2
-  - keyPosition: 51
-    line: 0
-  - keyPosition: 55
-    line: 0
-  - keyPosition: 57
+  - keyPosition: 53
     line: 1
-  - keyPosition: 55
+  - keyPosition: 54.2
     line: 0
+  - keyPosition: 58
+    line: 1
   - keyPosition: 59
+    line: 0
+  - keyPosition: 68
     line: 1
-  - keyPosition: 61
+  - keyPosition: 76
+    line: 0
+  - keyPosition: 84.5
+    line: 1
+  - keyPosition: 85.5
+    line: 0
+  - keyPosition: 261
+    line: 1
+  - keyPosition: 263
+    line: 1
+  - keyPosition: 265
+    line: 1
+  - keyPosition: 267
+    line: 1
+  - keyPosition: 270
+    line: 1
+  - keyPosition: 272
     line: 2
-  - keyPosition: 63
+  - keyPosition: 274
     line: 1
-  - keyPosition: 65
-    line: 2
-  - keyPosition: 67
+  - keyPosition: 276
+    line: 0
+  - keyPosition: 278
     line: 1
-  - keyPosition: 80
-    line: 1
-  - keyPosition: 82
-    line: 1
-  - keyPosition: 84
-    line: 1
-  - keyPosition: 85
-    line: 1
-  - keyPosition: 86
+  - keyPosition: 280
+    line: 0
+  - keyPosition: 282
     line: 1
