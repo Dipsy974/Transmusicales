@@ -95,6 +95,7 @@ public class CheckRythm : MonoBehaviour
             corridorParticles.transform.position = myCharacter.transform.position; 
             corridorParticles.Play(); 
             myDefM.IncreaseProgressScore();
+            myScoreM.IncreaseProgressPoints();
         }
         else
         {

@@ -72,8 +72,12 @@ public class Sinewave : MonoBehaviour
 
     private void LineMovement()
     {
-        var progress = (myCond.songPositionInBeats) / myCond.totalBeats;
-        transform.position = new Vector3(transform.position.x,Mathf.Lerp(startPos.y, finalPos.y, progress),transform.position.z);
+        if (!PauseControl.gameIsPaused)
+        {
+            var progress = (myCond.songPositionInBeats) / myCond.totalBeats;
+            transform.position = new Vector3(transform.position.x, Mathf.Lerp(startPos.y, finalPos.y, progress), transform.position.z);
+        }
+
     }
 
 }
