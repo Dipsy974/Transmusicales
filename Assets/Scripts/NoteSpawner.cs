@@ -35,7 +35,7 @@ public class NoteSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
             Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            Note note = Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) + new Vector3(0,0,-1) , Quaternion.identity, myCurves[selectedSong.keyBeats[i].line].transform);
+            Note note = Instantiate(sprt_note, curve.transform.TransformPoint(keyBeatsPos) + new Vector3(0, 0, -0.8f), Quaternion.identity, myCurves[selectedSong.keyBeats[i].line].transform);
             note.transform.localScale = Vector3.one * noteScale;
             listNotes.Add(note);
         }
@@ -96,7 +96,7 @@ public class NoteSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.keyBeats[i].line]; //Cible la courbe où doit être placée la note
             Vector3 keyBeatsPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.keyBeats[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos) + new Vector3(0, 0, -1);
+            listNotes[i].transform.position = curve.transform.TransformPoint(keyBeatsPos) + new Vector3(0, 0, -0.8f);
     
         }
 
