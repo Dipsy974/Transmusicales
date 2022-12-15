@@ -18,7 +18,11 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(totalPoints<= 0f)
+        {
+            totalPoints = 0f;
+        }
+
     }
 
     public void AccuracyPoints(float currentPosition, float notePosition)

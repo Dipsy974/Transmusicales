@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseControl : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class PauseControl : MonoBehaviour
     public Conductor myCond;
     public GameObject layer;
     public Blur blur;
+    public Image sprRenderer;
+    public Sprite pauseSprite;
+    public Sprite playSprite;
+    public RectTransform buttonTransform;
+
     void Update()
     {
 
@@ -24,6 +30,9 @@ public class PauseControl : MonoBehaviour
             myCond.dspSongTime = (float)AudioSettings.dspTime;
             uiMenu.ShowOptions(layer);
             blur.enabled = true;
+            sprRenderer.sprite = playSprite;
+            buttonTransform.position -= new Vector3(0, 520, 0);
+
         }
         else
         {
@@ -32,6 +41,8 @@ public class PauseControl : MonoBehaviour
             myCond.dspSongTime = (float)AudioSettings.dspTime - myCond.songPosition;
             uiMenu.HideOptions(layer);
             blur.enabled = false;
+            sprRenderer.sprite = pauseSprite;
+            buttonTransform.position += new Vector3(0, 520, 0);
         }
     }
 

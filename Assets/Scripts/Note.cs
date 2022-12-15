@@ -19,7 +19,7 @@ public class Note : MonoBehaviour
         {
             delta = transform.position.y / yDistance;
 
-            outline.localScale = Vector3.one * Mathf.Lerp(0.66f, 1.24f,delta );
+            outline.localScale = Vector3.one * Mathf.Lerp(1.33f, 3f,delta );
             outline.GetComponent<SpriteRenderer>().material.SetFloat("_MainAlpha", 1 - delta);
      
       

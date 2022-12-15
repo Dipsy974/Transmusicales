@@ -27,7 +27,7 @@ public class BackgroundPulse : MonoBehaviour
     {
 
 
-        transform.localScale = Vector3.one * Mathf.Lerp(maxScale, minScale, myCond.songPositionInBeats % 1);
+        transform.localScale = Vector3.one * Mathf.Lerp(maxScale, minScale, myCond.songPositionInBeats % 1) * 0.1f;
 
         Color spriteColor = spriteRenderer.color;
         spriteColor.a = opacity;
