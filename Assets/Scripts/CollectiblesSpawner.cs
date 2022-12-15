@@ -19,7 +19,7 @@ public class CollectiblesSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.collectibles[i].line]; //Cible la courbe où doit être placée la collectible
             Vector3 collectiblesPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.collectibles[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            GameObject collectible = (GameObject)Instantiate(sprt_collectible, curve.transform.TransformPoint(collectiblesPos) + new Vector3(0, 0, -1), Quaternion.identity, myCurves[selectedSong.collectibles[i].line].transform);
+            GameObject collectible = (GameObject)Instantiate(sprt_collectible, curve.transform.TransformPoint(collectiblesPos) + new Vector3(0, 0, -0.8f), Quaternion.identity, myCurves[selectedSong.collectibles[i].line].transform);
             collectible.transform.localScale = Vector3.one * collectibleScale;
             listCollectibles.Add(collectible);
         }
@@ -35,7 +35,7 @@ public class CollectiblesSpawner : MonoBehaviour
         {
             Sinewave curve = myCurves[selectedSong.collectibles[i].line]; //Cible la courbe où doit être placée la collectible
             Vector3 collectiblesPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.collectibles[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
-            listCollectibles[i].transform.position = curve.transform.TransformPoint(collectiblesPos) + new Vector3(0, 0, -1);
+            listCollectibles[i].transform.position = curve.transform.TransformPoint(collectiblesPos) + new Vector3(0, 0, -0.8f);
 
         }
 
