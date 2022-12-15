@@ -7,6 +7,8 @@ public class BackgroundElementsSpawner : MonoBehaviour
     public Conductor conductor;
     public BackgroundPulse prefab;
     public Transform beginning, end;
+    public float minTime, maxTime;
+    public float minDepth, maxDepth;
 
     private float currentTime;
     private float timeLimit = 2f;
@@ -26,8 +28,8 @@ public class BackgroundElementsSpawner : MonoBehaviour
             var position = new Vector3(Random.Range(beginning.position.x, end.position.x), beginning.position.y, 0);
             BackgroundPulse instance = Instantiate(prefab, position, Quaternion.identity);
             instance.myCond = conductor;
-            instance.depth = Random.Range(1f, 3f);
-            timeLimit = Random.Range(1f, 3f);
+            instance.depth = Random.Range(minDepth, maxDepth);
+            timeLimit = Random.Range(minTime, maxTime);
             currentTime = 0f;
         }
         

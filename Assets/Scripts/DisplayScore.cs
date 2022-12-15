@@ -16,6 +16,6 @@ public class DisplayScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tM.text = scoreManager.totalPoints.ToString();
+        tM.text = Mathf.Round(scoreManager.totalPoints).ToString();
     }
 }

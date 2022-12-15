@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
     public float minPoints, midPoints, maxPoints;
     public float midRange, maxRange;
     public float totalPoints = 0f;
+    public float pointsPerSecondCorridor = 20f;
     public CheckRythm myCheckRythm;
     // Start is called before the first frame update
     void Start()
@@ -45,4 +46,10 @@ public class ScoreManager : MonoBehaviour
     {
         totalPoints -= value;
     }
+
+    public void IncreaseProgressPoints()
+    {
+        totalPoints += pointsPerSecondCorridor * Time.deltaTime;
+    }
+
 }

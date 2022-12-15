@@ -103,4 +103,4 @@ MonoBehaviour:
   maxScale: 0.5
   depth: 1
   opacity: 0.3
-  scrollSpeed: 0.008
+  scrollSpeed: 1
