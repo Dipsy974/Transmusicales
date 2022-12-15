@@ -11,6 +11,7 @@ public class CheckRythm : MonoBehaviour
     public DefeatManager myDefM;
     public ScoreManager myScoreM;
     public ParticleSystem corridorParticles; 
+    public ParticleSystem noteParticles; 
     private int compteur = 0;
     private KeyBeats currentNote;
     public float range; 
@@ -73,6 +74,8 @@ public class CheckRythm : MonoBehaviour
                     {
                         myNS.listNotes[compteur].GetComponent<SpriteRenderer>().enabled = false;
                         myNS.listNotes[compteur].transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+                        noteParticles.transform.position = new Vector3(myNS.listNotes[compteur].transform.position.x, myNS.listNotes[compteur].transform.position.y, noteParticles.transform.position.z); 
+                        noteParticles.Play(); 
 
                         myDefM.IncreaseScore();
 

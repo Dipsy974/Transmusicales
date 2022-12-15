@@ -14,6 +14,8 @@ public class CharacterMovement : MonoBehaviour
     public bool freeMode = false;
     public Transform parentTransform;
     public Animator animator;
+    public CameraShake myShake;
+    public ParticleSystem collectibleParticles;
     public float scoreDecreaseOnHit;
     public float scoreIncreaseOnCollect;
 
@@ -151,12 +153,14 @@ public class CharacterMovement : MonoBehaviour
         {
             myDefeatManager.DecreaseScore();
             myScoreManager.DecreasePoints(scoreDecreaseOnHit);
+            myShake.StartShake(); 
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
         else if(collision.tag == "collectible")
         {
             myDefeatManager.IncreaseScore();
             myScoreManager.IncreasePoints(scoreIncreaseOnCollect);
+            collectibleParticles.Play(); 
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DefeatManager : MonoBehaviour
@@ -9,11 +10,13 @@ public class DefeatManager : MonoBehaviour
     public float currentScore; 
     public float scorePerMiss;
     public float scorePerHit;
+    public GameObject blurImage; 
 
     // Start is called before the first frame update
     void Start()
     {
-        currentScore = globalScore; 
+        currentScore = globalScore;
+        blurImage.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -22,6 +25,11 @@ public class DefeatManager : MonoBehaviour
         if (checkDefeat())
         {
             //SceneManager.LoadScene("DefeatScreen");
+        }
+
+        if(currentScore < 20)
+        {
+            blurImage.SetActive(true);
         }
     }
 

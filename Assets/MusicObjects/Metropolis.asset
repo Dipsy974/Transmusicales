@@ -375,3 +375,8 @@ MonoBehaviour:
     line: 1
   - keyPosition: 22
     line: 1
+  collectibles:
+  - keyPosition: 4
+    line: 1
+  - keyPosition: 5
+    line: 1
