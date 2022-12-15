@@ -34,7 +34,7 @@ public class Conductor : MonoBehaviour
     {
         //Récupère une chanson au hasard dans la base de données pour l'instant. Devra faire en sorte de récupérer la chanson sélectionnée par l'utilisateur
         //selectedSong = songDatabase.songs[Random.Range(0, songDatabase.songs.Length)];        
-        selectedSong = songDatabase.songs[1];
+        selectedSong = songDatabase.songs[3];
         songBpm = selectedSong.bpm;
         notes = selectedSong.keyBeats; 
         music.clip = selectedSong.audio;
@@ -56,10 +56,11 @@ public class Conductor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        songPosition = (float)(AudioSettings.dspTime - dspSongTime);
+        if (!PauseControl.gameIsPaused)
+        {
+            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
-        songPositionInBeats = songPosition / secPerBeat; 
-
+            songPositionInBeats = songPosition / secPerBeat;
+        }
     }
 }
