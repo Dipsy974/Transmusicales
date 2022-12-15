@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public PauseControl pauseControl;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class SceneChange : MonoBehaviour
 
     public void Reload()
     {
-        PauseControl.gameIsPaused = false;
+        pauseControl.PauseGame();
     }
 
 }

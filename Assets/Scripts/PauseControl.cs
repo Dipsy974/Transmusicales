@@ -31,7 +31,7 @@ public class PauseControl : MonoBehaviour
             uiMenu.ShowOptions(layer);
             blur.enabled = true;
             sprRenderer.sprite = playSprite;
-            buttonTransform.position -= new Vector3(0, 520, 0);
+            //buttonTransform.position -= new Vector3(0, 520, 0);
 
         }
         else
@@ -42,7 +42,7 @@ public class PauseControl : MonoBehaviour
             uiMenu.HideOptions(layer);
             blur.enabled = false;
             sprRenderer.sprite = pauseSprite;
-            buttonTransform.position += new Vector3(0, 520, 0);
+            //buttonTransform.position += new Vector3(0, 520, 0);
         }
     }
 

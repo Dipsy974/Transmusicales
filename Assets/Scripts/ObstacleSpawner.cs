@@ -21,7 +21,7 @@ public class ObstacleSpawner : MonoBehaviour
             Vector3 obstaclesPos = curve.GetComponent<LineRenderer>().GetPosition(Mathf.RoundToInt(selectedSong.obstacles[i].keyPosition * (curve.pointsRes - 1) / myCond.totalBeats));
             GameObject obstacle = (GameObject)Instantiate(sprt_obstacle, curve.transform.TransformPoint(obstaclesPos) + new Vector3(0, 0, -0.8f), Quaternion.identity, myCurves[selectedSong.obstacles[i].line].transform);
             obstacle.transform.localScale = Vector3.one * obstacleScale;
-            obstacle.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 90));
+            obstacle.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 360));
             listObstacles.Add(obstacle);
         }
 

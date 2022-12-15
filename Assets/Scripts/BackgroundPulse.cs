@@ -36,4 +36,9 @@ public class BackgroundPulse : MonoBehaviour
         transform.position += Vector3.down * scrollSpeed * Time.deltaTime;
 
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

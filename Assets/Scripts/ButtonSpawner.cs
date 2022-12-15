@@ -50,8 +50,9 @@ public class ButtonSpawner : MonoBehaviour
             transform.position = newPosition;
             Button thisInstance = Instantiate(button, newPosition, Quaternion.identity, parent);
             string name = database.songs[i].songName;
+            string artistName = database.songs[i].artistName;
             GameObject tmgm = thisInstance.transform.GetChild(0).gameObject;
-            tmgm.GetComponent<TMPro.TextMeshProUGUI>().text = name;
+            tmgm.GetComponent<TMPro.TextMeshProUGUI>().text = name + " - " + artistName ;
             thisInstance.GetComponent<ButtonScript>().attachedSong = database.songs[i];
             thisInstance.GetComponent<ButtonScript>().selectedSong = selectedSong;
             newY -= spacing;
