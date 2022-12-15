@@ -28,7 +28,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 16.5
+  - keyPosition: 17
     line: 2
     linkedStart: 0
     linkedEnd: 0
@@ -38,37 +38,32 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 34.4
+  - keyPosition: 33.8
     line: 2
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 37.5
+  - keyPosition: 36.8
     line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 40.4
+  - keyPosition: 39.8
     line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 43
+  - keyPosition: 42.5
     line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 44.7
+  - keyPosition: 45
     line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 46
-    line: 0
-    linkedStart: 0
-    linkedEnd: 0
-    isObstacle: 0
-  - keyPosition: 48.6
+  - keyPosition: 48
     line: 1
     linkedStart: 0
     linkedEnd: 0
@@ -121,7 +116,7 @@ MonoBehaviour:
     line: 2
   - keyPosition: 26
     line: 1
-  - keyPosition: 28
+  - keyPosition: 27
     line: 0
   - keyPosition: 30
     line: 1
