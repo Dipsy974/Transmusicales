@@ -138,7 +138,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 90.5
+  - keyPosition: 92.5
     line: 2
     linkedStart: 1
     linkedEnd: 0
@@ -168,20 +168,15 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 130.5
+  - keyPosition: 133.5
     line: 0
     linkedStart: 1
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 134.5
+  - keyPosition: 135.5
     line: 2
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
-  - keyPosition: 136.5
-    line: 1
-    linkedStart: 0
-    linkedEnd: 0
     isObstacle: 0
   - keyPosition: 138.5
     line: 2
@@ -190,6 +185,16 @@ MonoBehaviour:
     isObstacle: 0
   - keyPosition: 140.5
     line: 2
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 143.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 144.5
+    line: 1
     linkedStart: 1
     linkedEnd: 0
     isObstacle: 0
@@ -214,7 +219,7 @@ MonoBehaviour:
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 161
-    line: 2
+    line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
@@ -229,31 +234,31 @@ MonoBehaviour:
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 170
-    line: 0
-    linkedStart: 0
-    linkedEnd: 0
-    isObstacle: 0
-  - keyPosition: 172
     line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 174
-    line: 2
+  - keyPosition: 172
+    line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 187
+  - keyPosition: 174
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 188
     line: 0
     linkedStart: 1
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 195
+  - keyPosition: 196
     line: 2
     linkedStart: 0
     linkedEnd: 1
     isObstacle: 0
-  - keyPosition: 196.5
+  - keyPosition: 197.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
@@ -268,7 +273,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 219.5
+  - keyPosition: 220.5
     line: 1
     linkedStart: 1
     linkedEnd: 0
@@ -283,8 +288,103 @@ MonoBehaviour:
     linkedStart: 1
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 228.5
+  - keyPosition: 229.5
     line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 231
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 233.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 235.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 237.5
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 239.5
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 241.5
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 243.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 245.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 251.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 253.5
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 255.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 257.5
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 261.5
+    line: 2
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 270
+    line: 0
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 271.5
+    line: 0
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 277.5
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isObstacle: 0
+  - keyPosition: 278.5
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 285
+    line: 2
+    linkedStart: 1
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 292
+    line: 0
     linkedStart: 0
     linkedEnd: 1
     isObstacle: 0
@@ -323,7 +423,7 @@ MonoBehaviour:
     line: 2
   - keyPosition: 138.5
     line: 1
-  - keyPosition: 142.5
+  - keyPosition: 143.5
     line: 2
   - keyPosition: 143.5
     line: 0
@@ -369,6 +469,26 @@ MonoBehaviour:
     line: 2
   - keyPosition: 207
     line: 1
+  - keyPosition: 237
+    line: 1
+  - keyPosition: 235
+    line: 2
+  - keyPosition: 243.5
+    line: 0
+  - keyPosition: 245.5
+    line: 1
+  - keyPosition: 247.5
+    line: 2
+  - keyPosition: 253.5
+    line: 1
+  - keyPosition: 253.5
+    line: 2
+  - keyPosition: 255.5
+    line: 0
+  - keyPosition: 257.5
+    line: 1
+  - keyPosition: 259.5
+    line: 2
   collectibles:
   - keyPosition: 4
     line: 1
@@ -444,3 +564,11 @@ MonoBehaviour:
     line: 2
   - keyPosition: 217.5
     line: 2
+  - keyPosition: 246.5
+    line: 1
+  - keyPosition: 247.5
+    line: 1
+  - keyPosition: 248.5
+    line: 1
+  - keyPosition: 249.5
+    line: 1
