@@ -10,7 +10,13 @@ public class DefeatManager : MonoBehaviour
     public float currentScore; 
     public float scorePerMiss;
     public float scorePerHit;
-    public GameObject blurImage; 
+    public GameObject blurImage;
+    public UIMenu uiMenu;
+    public GameObject gameUI;
+    public GameObject defeatUI;
+    public PauseControl pauseControl;
+
+    private bool defeatDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +28,12 @@ public class DefeatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (checkDefeat())
+        if (checkDefeat() && !defeatDone)
         {
-            //SceneManager.LoadScene("DefeatScreen");
+            defeatDone = true;
+            uiMenu.HideOptions(gameUI);
+            uiMenu.ShowOptions(defeatUI);
+            pauseControl.PauseGame();
         }
 
         if(currentScore < 20)

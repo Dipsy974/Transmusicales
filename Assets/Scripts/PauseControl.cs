@@ -17,7 +17,16 @@ public class PauseControl : MonoBehaviour
 
     void Update()
     {
-
+        if (gameIsPaused)
+        {
+            uiMenu.ShowOptions(layer);
+            sprRenderer.sprite = playSprite;
+        }
+        else
+        {
+            uiMenu.HideOptions(layer);
+            sprRenderer.sprite = pauseSprite;
+        }
     }
 
     public void PauseGame()
@@ -28,9 +37,8 @@ public class PauseControl : MonoBehaviour
             Time.timeScale = 0f;
             myCond.music.Pause();
             myCond.dspSongTime = (float)AudioSettings.dspTime;
-            uiMenu.ShowOptions(layer);
             blur.enabled = true;
-            sprRenderer.sprite = playSprite;
+
             //buttonTransform.position -= new Vector3(0, 520, 0);
 
         }
@@ -39,9 +47,8 @@ public class PauseControl : MonoBehaviour
             Time.timeScale = 1;
             myCond.music.Play();
             myCond.dspSongTime = (float)AudioSettings.dspTime - myCond.songPosition;
-            uiMenu.HideOptions(layer);
             blur.enabled = false;
-            sprRenderer.sprite = pauseSprite;
+
             //buttonTransform.position += new Vector3(0, 520, 0);
         }
     }
