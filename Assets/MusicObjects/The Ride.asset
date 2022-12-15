@@ -248,7 +248,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 188
+  - keyPosition: 190
     line: 0
     linkedStart: 1
     linkedEnd: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 1
     isObstacle: 0
-  - keyPosition: 197.5
+  - keyPosition: 198.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
