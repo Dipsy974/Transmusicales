@@ -368,15 +368,5 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 1
     isObstacle: 0
-  obstacles:
-  - keyPosition: 12
-    line: 1
-  - keyPosition: 20
-    line: 1
-  - keyPosition: 22
-    line: 1
-  collectibles:
-  - keyPosition: 4
-    line: 1
-  - keyPosition: 5
-    line: 1
+  obstacles: []
+  collectibles: []
