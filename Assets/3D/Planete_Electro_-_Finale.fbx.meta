@@ -1,54 +1,14 @@
 fileFormatVersion: 2
-guid: db7a6d54aebb7024c9c7cabab8ba76c5
+guid: 4201e12112f68ee408aca7f86a1b20c7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert13
-    second: {fileID: 2100000, guid: b8b94975e81f4af4ca3a010d3d35db1b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert14
-    second: {fileID: 2100000, guid: 99690eb71d518124a9aaeb73d5165313, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert15
-    second: {fileID: 2100000, guid: 55f2f9845c0428244a7e7cddef566ed0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert16
-    second: {fileID: 2100000, guid: 422f2c3b07029074c8ac766dddd6b871, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert17
-    second: {fileID: 2100000, guid: a30f9d7f97f06b344b28d48b0679cfca, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert2
-    second: {fileID: 2100000, guid: 33980d68dc3e8b940a004c1bf9f0deab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert3
-    second: {fileID: 2100000, guid: 872373414c5ce7340b9cc0cf79d2c099, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert4
-    second: {fileID: 2100000, guid: dd0e7224c31d8df40b50a99ae952957a, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -86,7 +46,7 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
-    importLights: 0
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0

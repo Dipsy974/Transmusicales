@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class DisplayScore : MonoBehaviour
 {
+    public Conductor myCond; 
     public ScoreManager scoreManager;
-    public TMPro.TextMeshProUGUI tM; 
+    public TMPro.TextMeshProUGUI tM, tMsp; 
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class DisplayScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tM.text = scoreManager.totalPoints.ToString();
+        tM.text = Mathf.Round(scoreManager.totalPoints).ToString();
+        tMsp.text = myCond.songPositionInBeats.ToString();
     }
 }
