@@ -160,6 +160,7 @@ public class CharacterMovement : MonoBehaviour
         {
             myDefeatManager.IncreaseScore();
             myScoreManager.IncreasePoints(scoreIncreaseOnCollect);
+            collectibleParticles.transform.position = collision.transform.position + new Vector3(0,0, -2); 
             collectibleParticles.Play(); 
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
