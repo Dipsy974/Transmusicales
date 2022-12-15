@@ -5849,6 +5849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af09c5de51db2654ab0290f63e50affa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCond: {fileID: 1447550074}
 --- !u!4 &794744853
 Transform:
   m_ObjectHideFlags: 0
@@ -6063,7 +6064,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &978411854
 GameObject:
