@@ -29,4 +29,9 @@ public class SceneChange : MonoBehaviour
         Application.OpenURL(webpage);
     }
 
+    public void Reload()
+    {
+        PauseControl.gameIsPaused = false;
+    }
+
 }
