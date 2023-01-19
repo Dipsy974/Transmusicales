@@ -9,6 +9,7 @@ public class Song : ScriptableObject
     public string songName;
     public string artistName;
     public string planet;
+    public int lastBeat;
     public int bpm;
     public AudioClip audio;
     public KeyBeats[] keyBeats;

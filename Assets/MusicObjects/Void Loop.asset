@@ -15,6 +15,7 @@ MonoBehaviour:
   songName: Void Loop
   artistName: Birrd
   planet: blue
+  lastBeat: 315
   bpm: 121
   audio: {fileID: 8300000, guid: 7e19712fda9cede4aa63b892e77859c6, type: 3}
   keyBeats:
@@ -563,16 +564,6 @@ MonoBehaviour:
     line: 2
   - keyPosition: 310
     line: 0
-  - keyPosition: 310
-    line: 1
-  - keyPosition: 310
-    line: 2
-  - keyPosition: 311
-    line: 0
-  - keyPosition: 311
-    line: 1
-  - keyPosition: 311
-    line: 2
   collectibles:
   - keyPosition: 11.3
     line: 1
