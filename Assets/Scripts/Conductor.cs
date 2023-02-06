@@ -37,7 +37,7 @@ public class Conductor : MonoBehaviour
         //songSelector = FindObjectOfType<SelectedSong>();
         //selectedSong = songSelector.selectedSong;
         //selectedSong = songDatabase.songs[Random.Range(0, songDatabase.songs.Length)];        
-        selectedSong = songDatabase.songs[1];
+        selectedSong = songDatabase.songs[3];
         songBpm = selectedSong.bpm;
         notes = selectedSong.keyBeats; 
         music.clip = selectedSong.audio;

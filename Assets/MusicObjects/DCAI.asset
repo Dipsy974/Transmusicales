@@ -15,8 +15,251 @@ MonoBehaviour:
   songName: DCAI
   artistName: Alvan
   planet: blue
+  lastBeat: 500
   bpm: 121
   audio: {fileID: 8300000, guid: 2eafbcb6e19fd534fb3fd43e2027bb23, type: 3}
-  keyBeats: []
-  obstacles: []
-  collectibles: []
+  keyBeats:
+  - keyPosition: 32.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 34.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 36.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 38.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 40.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 42.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 44.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 45.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 46.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 48.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 49.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 51.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 53.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 55.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 57.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 59.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 60.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 61.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 62.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 64.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 65.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 66.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 68.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 70.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 72.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 74.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 75.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 76.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 78.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 80.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 81.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 82.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 84.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 86.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 88.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 94.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 96.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 95.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  obstacles:
+  - keyPosition: 64.7
+    line: 1
+  - keyPosition: 72.7
+    line: 0
+  - keyPosition: 74.7
+    line: 1
+  - keyPosition: 78.7
+    line: 2
+  - keyPosition: 84.7
+    line: 0
+  - keyPosition: 94.7
+    line: 0
+  - keyPosition: 94.7
+    line: 2
+  - keyPosition: 96.7
+    line: 0
+  - keyPosition: 96.7
+    line: 2
+  collectibles:
+  - keyPosition: 3.5
+    line: 1
+  - keyPosition: 5.5
+    line: 1
+  - keyPosition: 7.5
+    line: 1
+  - keyPosition: 9.5
+    line: 2
+  - keyPosition: 11.5
+    line: 2
+  - keyPosition: 13.5
+    line: 2
+  - keyPosition: 15.5
+    line: 0
+  - keyPosition: 17.5
+    line: 0
+  - keyPosition: 19.5
+    line: 0
+  - keyPosition: 21.5
+    line: 1
+  - keyPosition: 22.5
+    line: 1
+  - keyPosition: 24.5
+    line: 2
+  - keyPosition: 25.5
+    line: 2
+  - keyPosition: 27.5
+    line: 0
+  - keyPosition: 28.5
+    line: 0
+  - keyPosition: 30.5
+    line: 1
+  - keyPosition: 31.5
+    line: 1
