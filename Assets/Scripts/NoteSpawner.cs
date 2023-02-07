@@ -124,6 +124,7 @@ public class NoteSpawner : MonoBehaviour
         LineRenderer lr = line.GetComponent<LineRenderer>();
         EdgeCollider2D edgeCollider = line.GetComponent<EdgeCollider2D>();
         Transform lineTransform = lr.transform;
+        
 
         List<Vector2> edges = new List<Vector2>();
 
