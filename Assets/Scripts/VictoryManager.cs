@@ -10,7 +10,7 @@ public class VictoryManager : MonoBehaviour
     public GameObject gameUI;
     public GameObject victoryUI;
     public PauseControl pauseControl;
-    private bool victory = false;
+    public bool victory = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +23,10 @@ public class VictoryManager : MonoBehaviour
     {
         if(myCond.songPositionInBeats >= myCond.selectedSong.lastBeat && !victory)
         {
+            victory = true;
             uiMenu.HideOptions(gameUI);
             uiMenu.ShowOptions(victoryUI);
             pauseControl.PauseGame();
-            victory = true;
         }
         
     }
