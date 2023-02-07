@@ -16,6 +16,8 @@ public class CheckRythm : MonoBehaviour
     private KeyBeats currentNote;
     public float range;
 
+    private KeyBeats _previousNote; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,7 @@ public class CheckRythm : MonoBehaviour
             }
 
 
+            _previousNote = currentNote; 
             compteur++;
             currentNote = myCond.notes[compteur];
                 
@@ -87,8 +90,13 @@ public class CheckRythm : MonoBehaviour
 
                 currentNote.CheckKey();
 
-
             }
+
+        }
+        if (_previousNote.linkedStart)
+        {
+            myCharacter.freeMode = true;
+
         }
     }
 
