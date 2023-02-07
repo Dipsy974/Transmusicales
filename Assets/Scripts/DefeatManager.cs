@@ -50,7 +50,7 @@ public class DefeatManager : MonoBehaviour
             currentScore = globalScore; 
         }
 
-        Debug.Log(currentScore);
+        
     }
 
     public void IncreaseProgressScore()
@@ -61,13 +61,13 @@ public class DefeatManager : MonoBehaviour
             currentScore = globalScore;
         }
 
-        Debug.Log(currentScore);
+       
     }
 
     public void DecreaseScore()
     {
         currentScore -= scorePerMiss;
-        Debug.Log(currentScore); 
+        
     }
 
     public bool checkDefeat()

@@ -17,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
     public CameraShake myShake;
     public ParticleSystem collectibleParticles;
     public ParticleSystem obstacleParticles;
+    public ParticleSystem corridorParticles;
     public float scoreDecreaseOnHit;
     public float scoreIncreaseOnCollect;
 
@@ -140,12 +141,16 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        _isInCorridor = true; 
+        _isInCorridor = true;
+         
     }
+
+    
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         _isInCorridor = false;
+     
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
