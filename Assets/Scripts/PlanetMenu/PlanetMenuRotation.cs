@@ -26,6 +26,7 @@ public class PlanetMenuRotation : MonoBehaviour
         {
             delta += Time.deltaTime * _rotationSpeed;
         }
+
         if (currentPlanetIndex == 1 && isRotating)
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, -130f, transform.rotation.z), delta);
