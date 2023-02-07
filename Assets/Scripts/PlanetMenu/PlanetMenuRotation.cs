@@ -7,10 +7,12 @@ public class PlanetMenuRotation : MonoBehaviour
 {
 
     [SerializeField]
-    private float _rotationSpeed;
-    [SerializeField]
-    private string[] planetList;
+    private float _rotationSpeed, _range;
+    public string[] planetList;
     public int currentPlanetIndex = 0;
+    public bool isRotating;
+    private float delta = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,23 +22,34 @@ public class PlanetMenuRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentPlanetIndex == 1)
+        if (isRotating)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, -130f, transform.rotation.z), _rotationSpeed);
+            delta += Time.deltaTime * _rotationSpeed;
         }
-        else if (currentPlanetIndex == 0)
+        if (currentPlanetIndex == 1 && isRotating)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 0f, transform.rotation.z), _rotationSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, -130f, transform.rotation.z), delta);
         }
-        if (currentPlanetIndex == 2)
+        else if (currentPlanetIndex == 0 && isRotating)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 130f, transform.rotation.z), _rotationSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 0f, transform.rotation.z), delta);
+        }
+        if (currentPlanetIndex == 2 && isRotating)
+        {
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 130f, transform.rotation.z), delta);
+        }
+
+        if(delta >= _rotationSpeed)
+        {
+            isRotating = false;
+            delta = 0;
         }
 
     }
 
     public void ChangePlanet(string direction)
     {
+        isRotating = true;
         if (direction == "right")
         {
             if (currentPlanetIndex > 1)
@@ -60,4 +73,5 @@ public class PlanetMenuRotation : MonoBehaviour
             }
         }
     }
+
 }

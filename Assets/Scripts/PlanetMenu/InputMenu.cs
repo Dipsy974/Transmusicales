@@ -6,6 +6,7 @@ public class InputMenu : MonoBehaviour
 {
     public float swipeSensibility;
     public PlanetMenuRotation rotation;
+    public SelectPlanet selectPlanet;
     private Vector2 firstPressPos;
     private Vector2 secondPressPos;
     private Vector2 currentSwipe;
@@ -19,7 +20,10 @@ public class InputMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MenuSwipe();
+        if (Input.touchCount > 0)
+        {
+            MenuSwipe();
+        }
     }
 
     public void MenuSwipe()
@@ -48,16 +52,17 @@ public class InputMenu : MonoBehaviour
                     rotation.ChangePlanet("left");
                 }
                 //swipe right
-                if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                else if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
                 {
                     rotation.ChangePlanet("right");
                 }
+                else if (!rotation.isRotating)
+                {
+                    selectPlanet.Select();
+                }
 
             }
-
-
             
-
         }
 
     }
