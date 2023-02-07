@@ -16,14 +16,23 @@ public class CheckRythm : MonoBehaviour
     private KeyBeats currentNote;
     public float range;
 
-    private KeyBeats _previousNote; 
+    public int onBoardingTouchNb;
+    public float onBoardingHoldNb;
+    private bool _onBoardingTouchChecked = false;
+    private bool _onBoardingHoldChecked = false;
+    private int onBoardingTouchCompteur = 0;
+    private float onBoardingHoldCompteur = 0;
+
+    private KeyBeats _previousNote;
+
+    public AnimatorLauncher animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
         currentNote = myCond.notes[compteur];
-     
+        
     }
 
     // Update is called once per frame
@@ -34,7 +43,7 @@ public class CheckRythm : MonoBehaviour
             Debug.Log(currentNote.GetCheck());
             if (!currentNote.GetCheck() && !currentNote.linkedEnd)
             {
-                myDefM.DecreaseScore(); 
+                myDefM.DecreaseScore();
             }
 
             if(currentNote.linkedEnd && !currentNote.linkedStart) //Désactive le freemode à la fin d'un corridor
@@ -116,6 +125,28 @@ public class CheckRythm : MonoBehaviour
         else
         {
             corridorParticles.Stop();
+        }
+    }
+
+    public void CheckOnboarding(string type)
+    {
+        if(type == "touch")
+        {
+            onBoardingTouchCompteur++;
+        }
+        else if(type == "hold")
+        {
+            onBoardingHoldCompteur++;
+        }
+
+        if(onBoardingHoldCompteur >= onBoardingHoldNb)
+        {
+            _onBoardingHoldChecked = true; 
+        }
+
+        if (onBoardingTouchCompteur >= onBoardingTouchNb)
+        {
+            _onBoardingTouchChecked = true;
         }
     }
 
