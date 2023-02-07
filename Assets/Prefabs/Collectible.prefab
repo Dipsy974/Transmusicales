@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7666446017276404569}
   - component: {fileID: 6822091525040636012}
   - component: {fileID: 3520568723667608692}
+  - component: {fileID: 5064268922656331276}
   m_Layer: 0
   m_Name: Collectible
   m_TagString: collectible
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 729834ff65aa9554392662ee3c38cbaa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72ef1b5ef17de13439812f12e1d2bdcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,16 +99,29 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01924777, y: -0.42345023}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.48, y: 10.48}
+    oldSize: {x: 4.72, y: 4.62}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.0017653, y: 3.0787559}
   m_EdgeRadius: 0
+--- !u!114 &5064268922656331276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593892544990963263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3dd0b9520cd744e80a6c764450c51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedRange: 6400000078000000

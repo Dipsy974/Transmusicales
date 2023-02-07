@@ -14,7 +14,10 @@ public class CheckRythm : MonoBehaviour
     public ParticleSystem noteParticles; 
     private int compteur = 0;
     private KeyBeats currentNote;
-    public float range; 
+    public float range;
+
+    private KeyBeats _previousNote; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +44,7 @@ public class CheckRythm : MonoBehaviour
             }
 
 
+            _previousNote = currentNote; 
             compteur++;
             currentNote = myCond.notes[compteur];
                 
@@ -86,17 +90,26 @@ public class CheckRythm : MonoBehaviour
 
                 currentNote.CheckKey();
 
-
             }
-        }  
+
+        }
+        if (_previousNote.linkedStart)
+        {
+            myCharacter.freeMode = true;
+
+        }
     }
 
     public void CheckCorridor()
     {
         if (myCharacter.GetIsInCorridor())
         {
-            corridorParticles.transform.position = myCharacter.transform.position; 
-            corridorParticles.Play(); 
+            corridorParticles.transform.position = myCharacter.transform.position + new Vector3(0, 0, -2);
+            if (!corridorParticles.isPlaying)
+            {
+                corridorParticles.Play();
+            }
+            
             myDefM.IncreaseProgressScore();
             myScoreM.IncreaseProgressPoints();
         }

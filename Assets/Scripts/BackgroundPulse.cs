@@ -33,7 +33,10 @@ public class BackgroundPulse : MonoBehaviour
         spriteColor.a = opacity;
         spriteRenderer.color = spriteColor;
 
+        
+       
         transform.position += Vector3.down * scrollSpeed * Time.deltaTime;
+
 
     }
 

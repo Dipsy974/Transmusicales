@@ -70,8 +70,8 @@ public class NoteSpawner : MonoBehaviour
                 myLine.GetComponent<EdgeCollider2D>().isTrigger = true;
                 LineRenderer lr = myLine.GetComponent<LineRenderer>();
 
-                lr.startWidth = 5f;
-                lr.endWidth = 5f;
+                lr.startWidth = 6f;
+                lr.endWidth = 6f;
                 lr.startColor = Color.magenta;
                 lr.endColor = Color.magenta;
 
@@ -124,6 +124,7 @@ public class NoteSpawner : MonoBehaviour
         LineRenderer lr = line.GetComponent<LineRenderer>();
         EdgeCollider2D edgeCollider = line.GetComponent<EdgeCollider2D>();
         Transform lineTransform = lr.transform;
+        
 
         List<Vector2> edges = new List<Vector2>();
 
