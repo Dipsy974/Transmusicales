@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songName: DCAI
   artistName: Alvan
-  planet: blue
+  planet: Wild
   lastBeat: 500
   bpm: 121
   audio: {fileID: 8300000, guid: 2eafbcb6e19fd534fb3fd43e2027bb23, type: 3}
@@ -184,27 +184,37 @@ MonoBehaviour:
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
+  - keyPosition: 85.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
   - keyPosition: 86.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 88.7
-    line: 1
+  - keyPosition: 87.7
+    line: 2
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
-  - keyPosition: 94.7
-    line: 1
+  - keyPosition: 88.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 89.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isObstacle: 0
+  - keyPosition: 91.7
+    line: 0
     linkedStart: 0
     linkedEnd: 0
     isObstacle: 0
   - keyPosition: 96.7
-    line: 1
-    linkedStart: 0
-    linkedEnd: 0
-    isObstacle: 0
-  - keyPosition: 95.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
@@ -220,6 +230,8 @@ MonoBehaviour:
     line: 2
   - keyPosition: 84.7
     line: 0
+  - keyPosition: 87.7
+    line: 1
   - keyPosition: 94.7
     line: 0
   - keyPosition: 94.7
@@ -262,4 +274,10 @@ MonoBehaviour:
   - keyPosition: 30.5
     line: 1
   - keyPosition: 31.5
+    line: 1
+  - keyPosition: 93.7
+    line: 1
+  - keyPosition: 94.7
+    line: 1
+  - keyPosition: 95.7
     line: 1

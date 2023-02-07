@@ -579,7 +579,7 @@ MonoBehaviour:
   _rotationSpeed: 0.05
   _range: 0.5
   planetList:
-  - Nostalgie
+  - Nostalgia
   - Dreamy
   - Wild
   currentPlanetIndex: 0

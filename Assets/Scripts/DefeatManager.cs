@@ -16,7 +16,7 @@ public class DefeatManager : MonoBehaviour
     public GameObject defeatUI;
     public PauseControl pauseControl;
 
-    private bool defeatDone = false;
+    public bool defeatDone = false;
 
     // Start is called before the first frame update
     void Start()

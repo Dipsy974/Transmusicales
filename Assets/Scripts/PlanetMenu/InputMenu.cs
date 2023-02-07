@@ -47,12 +47,12 @@ public class InputMenu : MonoBehaviour
                     //normalize the 2d vector
                     Vector2 currentSwipeNormalized = currentSwipe.normalized; //Pour gérer la direction du swipe à la verticale
 
-                if (currentSwipe.x < -swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                if (currentSwipe.x < -swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f && !rotation.isRotating)
                 {
                     rotation.ChangePlanet("left");
                 }
                 //swipe right
-                else if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
+                else if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f && !rotation.isRotating)
                 {
                     rotation.ChangePlanet("right");
                 }

@@ -20,7 +20,7 @@ public class PlanetMenuRotation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isRotating)
         {
@@ -39,7 +39,7 @@ public class PlanetMenuRotation : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 130f, transform.rotation.z), delta);
         }
 
-        if(delta >= _rotationSpeed)
+        if(delta >= 0.1f)
         {
             isRotating = false;
             delta = 0;

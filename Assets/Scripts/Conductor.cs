@@ -34,8 +34,8 @@ public class Conductor : MonoBehaviour
     void Start()
     {
         //Récupère une chanson au hasard dans la base de données pour l'instant. Devra faire en sorte de récupérer la chanson sélectionnée par l'utilisateur
-        //songSelector = FindObjectOfType<SelectedSong>();
-        //selectedSong = songSelector.selectedSong;
+        songSelector = FindObjectOfType<SelectedSong>();
+        selectedSong = songSelector.selectedSong;
         //selectedSong = songDatabase.songs[Random.Range(0, songDatabase.songs.Length)];        
         selectedSong = songDatabase.songs[2];
         songBpm = selectedSong.bpm;

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class PauseControl : MonoBehaviour
 {
     public static bool gameIsPaused;
+    public VictoryManager victoryManager;
+    public DefeatManager defeatManager;
     public UIMenu uiMenu;
     public Conductor myCond;
     public GameObject layer;
@@ -13,17 +15,22 @@ public class PauseControl : MonoBehaviour
     public Image sprRenderer;
     public Sprite pauseSprite;
     public Sprite playSprite;
-    public RectTransform buttonTransform;
+    public GameObject pauseButton;
+
+
 
     void Update()
     {
-        if (gameIsPaused)
+        if (gameIsPaused && !victoryManager.victory && !defeatManager.defeatDone)
         {
             uiMenu.ShowOptions(layer);
+            uiMenu.HideOptions(pauseButton);
             sprRenderer.sprite = playSprite;
+            Debug.Log(Screen.height);
         }
         else
         {
+            uiMenu.ShowOptions(pauseButton);
             uiMenu.HideOptions(layer);
             sprRenderer.sprite = pauseSprite;
         }
@@ -39,8 +46,6 @@ public class PauseControl : MonoBehaviour
             myCond.dspSongTime = (float)AudioSettings.dspTime;
             blur.enabled = true;
 
-            //buttonTransform.position -= new Vector3(0, 520, 0);
-
         }
         else
         {
@@ -48,8 +53,6 @@ public class PauseControl : MonoBehaviour
             myCond.music.Play();
             myCond.dspSongTime = (float)AudioSettings.dspTime - myCond.songPosition;
             blur.enabled = false;
-
-            //buttonTransform.position += new Vector3(0, 520, 0);
         }
     }
 
