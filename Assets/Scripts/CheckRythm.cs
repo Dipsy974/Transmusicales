@@ -32,6 +32,7 @@ public class CheckRythm : MonoBehaviour
     void Start()
     {
         currentNote = myCond.notes[compteur];
+        animator.LaunchRightSwipe(); 
         
     }
 

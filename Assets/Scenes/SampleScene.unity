@@ -6939,7 +6939,7 @@ MonoBehaviour:
   sprRenderer: {fileID: 777026734}
   pauseSprite: {fileID: 21300000, guid: 5fadf39e42ec6ee48b6dbd680617ac71, type: 3}
   playSprite: {fileID: 21300000, guid: 700790bcd835d074a9de1404ac432984, type: 3}
-  buttonTransform: {fileID: 777026732}
+  buttonTransform: {fileID: 0}
 --- !u!4 &794744853
 Transform:
   m_ObjectHideFlags: 0
@@ -33993,6 +33993,8 @@ MonoBehaviour:
   corridorParticles: {fileID: 1737821360}
   noteParticles: {fileID: 1111258903}
   range: 0.39
+  onBoardingTouchNb: 0
+  onBoardingHoldNb: 0
   animator: {fileID: 721179421}
 --- !u!4 &1774577788
 Transform:
