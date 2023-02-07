@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
     public Animator animator;
     public CameraShake myShake;
     public ParticleSystem collectibleParticles;
+    public ParticleSystem obstacleParticles;
     public float scoreDecreaseOnHit;
     public float scoreIncreaseOnCollect;
 
@@ -153,7 +154,9 @@ public class CharacterMovement : MonoBehaviour
         {
             myDefeatManager.DecreaseScore();
             myScoreManager.DecreasePoints(scoreDecreaseOnHit);
-            myShake.StartShake(); 
+            myShake.StartShake();
+            obstacleParticles.transform.position = collision.transform.position + new Vector3(0, 0, -2);
+            obstacleParticles.Play();
             collision.GetComponent<SpriteRenderer>().enabled = false;
         }
         else if(collision.tag == "collectible")
