@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songName: DCAI
   artistName: Alvan
-  planet: blue
+  planet: Wild
   lastBeat: 500
   bpm: 121
   audio: {fileID: 8300000, guid: 2eafbcb6e19fd534fb3fd43e2027bb23, type: 3}
