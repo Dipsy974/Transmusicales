@@ -11,10 +11,12 @@ public class AnimatorLauncher : MonoBehaviour
     private IEnumerator LaunchAnimation(string str)
     {
         coroutineLaunched = true;
-        holder.SetActive(true);
+
+        
         animator.SetTrigger(str);
-        yield return new WaitForSeconds(2f);
-        holder.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        animator.SetTrigger("Invisible");
+        
         coroutineLaunched = false;
 
     }

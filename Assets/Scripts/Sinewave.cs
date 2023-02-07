@@ -39,8 +39,7 @@ public class Sinewave : MonoBehaviour
         float tau = 2 * Mathf.PI;
         float xEnd = lineLimits.y;
 
-        if (myCond.selectedSong.planet == "blue")
-        {
+        
 
             for (int currentPoint = 0; currentPoint < pointsRes; currentPoint++)
             {
@@ -49,20 +48,20 @@ public class Sinewave : MonoBehaviour
                 float y = amplitude * Mathf.Sin(x * tau * frequency);
                 myLR.SetPosition(currentPoint, new Vector3(y, x, 0));
             }
-        }
+        
 
 
-        else if (myCond.selectedSong.planet == "yellow")
-        {
-            for (int currentPoint = 0; currentPoint < pointsRes; currentPoint++)
-            {
-                float progress = (float)currentPoint / (pointsRes - 1);
-                float x = Mathf.Lerp(xStart, xEnd, progress);
-                float y = 2 * (((Mathf.PI / 2) - amplitude * Mathf.Asin(Mathf.Cos(x))) / Mathf.PI) - 1;
-                myLR.SetPosition(currentPoint, new Vector3(y, x, 0));
-            }
+        //else if (myCond.selectedSong.planet == "yellow")
+        //{
+        //    for (int currentPoint = 0; currentPoint < pointsRes; currentPoint++)
+        //    {
+        //        float progress = (float)currentPoint / (pointsRes - 1);
+        //        float x = Mathf.Lerp(xStart, xEnd, progress);
+        //        float y = 2 * (((Mathf.PI / 2) - amplitude * Mathf.Asin(Mathf.Cos(x))) / Mathf.PI) - 1;
+        //        myLR.SetPosition(currentPoint, new Vector3(y, x, 0));
+        //    }
 
-        }
+        //}
 
 
         startPos = myLR.GetPosition(0);

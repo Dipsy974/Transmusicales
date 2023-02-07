@@ -6932,6 +6932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af09c5de51db2654ab0290f63e50affa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryManager: {fileID: 0}
+  defeatManager: {fileID: 0}
   uiMenu: {fileID: 660335916}
   myCond: {fileID: 1447550074}
   layer: {fileID: 2067851825}
@@ -6939,7 +6941,7 @@ MonoBehaviour:
   sprRenderer: {fileID: 777026734}
   pauseSprite: {fileID: 21300000, guid: 5fadf39e42ec6ee48b6dbd680617ac71, type: 3}
   playSprite: {fileID: 21300000, guid: 700790bcd835d074a9de1404ac432984, type: 3}
-  buttonTransform: {fileID: 777026732}
+  pauseButton: {fileID: 777026731}
 --- !u!4 &794744853
 Transform:
   m_ObjectHideFlags: 0
@@ -12434,6 +12436,7 @@ MonoBehaviour:
   gameUI: {fileID: 799736614}
   victoryUI: {fileID: 1970146903}
   pauseControl: {fileID: 794744852}
+  victory: 0
 --- !u!4 &1010625954
 Transform:
   m_ObjectHideFlags: 0
@@ -23033,6 +23036,7 @@ MonoBehaviour:
   gameUI: {fileID: 799736614}
   defeatUI: {fileID: 950242959}
   pauseControl: {fileID: 794744852}
+  defeatDone: 0
 --- !u!4 &1251405411
 Transform:
   m_ObjectHideFlags: 0
@@ -33993,6 +33997,9 @@ MonoBehaviour:
   corridorParticles: {fileID: 1737821360}
   noteParticles: {fileID: 1111258903}
   range: 0.39
+  onBoardingTouchNb: 2
+  onBoardingHoldNb: 20
+  onBoardingSwipeNb: 2
   animator: {fileID: 721179421}
 --- !u!4 &1774577788
 Transform:
@@ -35213,7 +35220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5295940166763576007, guid: 7ce2012c9ab7e514389bd3719ec2e159, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ce2012c9ab7e514389bd3719ec2e159, type: 3}

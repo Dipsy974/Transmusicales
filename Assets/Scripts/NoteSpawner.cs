@@ -44,7 +44,9 @@ public class NoteSpawner : MonoBehaviour
         {
             if(selectedSong.keyBeats[i].linkedStart)
             {
-                listNotes[i].GetComponent<SpriteRenderer>().material.SetColor("_MainColor", Color.magenta); 
+                listNotes[i].GetComponent<SpriteRenderer>().material.SetColor("_MainColor", Color.magenta);
+                listNotes[i].outline.GetComponent<SpriteRenderer>().enabled = false;
+                listNotes[i].GetComponent<SpriteRenderer>().enabled = false;
             }
 
             if (selectedSong.keyBeats[i].linkedEnd)

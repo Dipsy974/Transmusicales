@@ -82,12 +82,16 @@ public class PlayerController : MonoBehaviour
                     if (currentSwipe.x < -swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
                     {
                         myCharacter.ChangePath("RIGHT");
+                        myCheck.CheckOnboarding("swipe");
                     }
                     //swipe right
                     if (currentSwipe.x > swipeSensibility && currentSwipeNormalized.y > -0.5f && currentSwipeNormalized.y < 0.5f)
                     {
                         myCharacter.ChangePath("LEFT");
+                        myCheck.CheckOnboarding("swipe");
                     }
+
+                    
                 }
             }
         }
