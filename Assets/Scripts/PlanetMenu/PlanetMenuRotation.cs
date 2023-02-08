@@ -28,7 +28,7 @@ public class PlanetMenuRotation : MonoBehaviour
         }
         if (currentPlanetIndex == 1 && isRotating)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, -130f, transform.rotation.z), delta);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, -129f, transform.rotation.z), delta);
         }
         else if (currentPlanetIndex == 0 && isRotating)
         {
@@ -36,7 +36,7 @@ public class PlanetMenuRotation : MonoBehaviour
         }
         if (currentPlanetIndex == 2 && isRotating)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 130f, transform.rotation.z), delta);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, 129f, transform.rotation.z), delta);
         }
 
         if(delta >= 0.1f)
