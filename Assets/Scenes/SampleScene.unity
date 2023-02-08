@@ -6315,7 +6315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
@@ -24157,7 +24157,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -25146,8 +25146,8 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0.13585556
         - serializedVersion: 3
-          time: 0.28600085
-          value: 0.91820353
+          time: 0.25533068
+          value: 0.9319975
           inSlope: -0.14388855
           outSlope: -0.14388855
           tangentMode: 0
@@ -25155,13 +25155,22 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.1436237
         - serializedVersion: 3
-          time: 1
-          value: 0
-          inSlope: -2
-          outSlope: -2
+          time: 0.6396354
+          value: 0.4758606
+          inSlope: -1.9507856
+          outSlope: -1.9507856
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0
+          inWeight: 0.33333334
+          outWeight: 0.24667487
+        - serializedVersion: 3
+          time: 0.9979248
+          value: 0
+          inSlope: -0.47073114
+          outSlope: -0.47073114
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.25107583
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -26824,7 +26833,7 @@ ParticleSystem:
     inWorldSpace: 0
     multiplyDragByParticleSize: 1
     multiplyDragByParticleVelocity: 1
-    dampen: 0.18
+    dampen: 0.06
     drag:
       serializedVersion: 2
       minMaxState: 0
@@ -30589,8 +30598,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.5683679, g: 0, b: 0.5754717, a: 1}
-        key1: {r: 0.5377358, g: 0, b: 0.46966806, a: 1}
+        key0: {r: 0, g: 0.4811321, b: 0.0682557, a: 1}
+        key1: {r: 0.3537736, g: 1, b: 0.7208951, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -34342,7 +34351,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -34508,8 +34517,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 10
-      minScalar: 5
+      scalar: 5
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -35339,6 +35348,15 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.1436237
+        - serializedVersion: 3
+          time: 0.6473279
+          value: 0.3997957
+          inSlope: -1.4957062
+          outSlope: -1.4957062
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -37009,7 +37027,7 @@ ParticleSystem:
     inWorldSpace: 0
     multiplyDragByParticleSize: 1
     multiplyDragByParticleVelocity: 1
-    dampen: 0.14
+    dampen: 0
     drag:
       serializedVersion: 2
       minMaxState: 0
