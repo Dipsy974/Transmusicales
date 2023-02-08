@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlanetMenuRotation : MonoBehaviour
 
@@ -9,9 +10,11 @@ public class PlanetMenuRotation : MonoBehaviour
     [SerializeField]
     private float _rotationSpeed, _range;
     public string[] planetList;
+    public Sprite[] planetNames;
     public int currentPlanetIndex = 0;
     public bool isRotating;
     private float delta = 0f;
+    public Image img;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +47,8 @@ public class PlanetMenuRotation : MonoBehaviour
             isRotating = false;
             delta = 0;
         }
+
+        img.sprite = planetNames[currentPlanetIndex];
 
     }
 

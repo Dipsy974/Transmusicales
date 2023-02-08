@@ -20,6 +20,7 @@ public class ButtonSpawner : MonoBehaviour
     {
         database = FindObjectOfType<SongDatabaseUpdated>();
         assetChange = FindObjectOfType<ListMenuAssetsChange>();
+        selectedSong = FindObjectOfType<SelectedSong>();
 
         float newY = transform.position.y;
 
@@ -43,7 +44,7 @@ public class ButtonSpawner : MonoBehaviour
             string artistName = database.songs[k].artistName;
             GameObject tmgm = thisInstance.transform.GetChild(0).gameObject;
             tmgm.GetComponent<TMPro.TextMeshProUGUI>().text = name + " - " + artistName;
-            thisInstance.GetComponent<ButtonScript>().attachedSong = database.songs[k];
+            Debug.Log(thisInstance.GetComponent<ButtonScript>().attachedSong = database.songs[k]);
             thisInstance.GetComponent<ButtonScript>().selectedSong = selectedSong;
             Debug.Log(thisInstance);
             newY -= spacing;

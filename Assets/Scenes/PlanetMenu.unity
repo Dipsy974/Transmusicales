@@ -840,8 +840,13 @@ MonoBehaviour:
   - Nostalgia
   - Dreamy
   - Wild
+  planetNames:
+  - {fileID: 21300000, guid: 078ddb5215a0fde409acc21a90404542, type: 3}
+  - {fileID: 21300000, guid: 9ec6db2a1170f994db50a9e8df4d6799, type: 3}
+  - {fileID: 21300000, guid: 25c70c481f7179048838f7781e2ca0d0, type: 3}
   currentPlanetIndex: 0
   isRotating: 0
+  img: {fileID: 711084059}
 --- !u!1 &745625639
 GameObject:
   m_ObjectHideFlags: 0
