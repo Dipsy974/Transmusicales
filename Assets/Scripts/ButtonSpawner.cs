@@ -6,26 +6,26 @@ using UnityEngine.UI;
 public class ButtonSpawner : MonoBehaviour
 {
     public SongDatabaseUpdated database;
+    public ListMenuAssetsChange assetChange;
     public RectTransform parent;
-    public Button button;
+    public Button[] buttons;
     public SelectedSong selectedSong;
     public float spacing = 150f;
     Dictionary<int, Song> songList =
     new Dictionary<int, Song>();
-    public string planet;
+ 
 
     // Start is called before the first frame update
     void Start()
     {
-        //selectedSong = FindObjectOfType<SelectedSong>();
-
-        //planet = selectedSong.selectedPlanet;
+        database = FindObjectOfType<SongDatabaseUpdated>();
+        assetChange = FindObjectOfType<ListMenuAssetsChange>();
 
         float newY = transform.position.y;
 
         for (int i = 0; i < database.songs.Length; i++)
         {
-            if (database.songs[i].planet == planet)
+            if (database.songs[i].planet == assetChange.planet)
             {
                 songList.Add(i, database.songs[i]);
             };
@@ -38,7 +38,7 @@ public class ButtonSpawner : MonoBehaviour
             
             Vector3 newPosition = new Vector3(transform.position.x, newY, transform.position.z);
             transform.position = newPosition;
-            Button thisInstance = Instantiate(button, newPosition, Quaternion.identity, parent);
+            Button thisInstance = Instantiate(buttons[assetChange.planetIndex], newPosition, Quaternion.identity, parent);
             string name = database.songs[k].name;
             string artistName = database.songs[k].artistName;
             GameObject tmgm = thisInstance.transform.GetChild(0).gameObject;
