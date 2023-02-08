@@ -72,10 +72,10 @@ public class NoteSpawner : MonoBehaviour
                 myLine.GetComponent<EdgeCollider2D>().isTrigger = true;
                 LineRenderer lr = myLine.GetComponent<LineRenderer>();
 
-                lr.startWidth = 6f;
-                lr.endWidth = 6f;
-                lr.startColor = Color.magenta;
-                lr.endColor = Color.magenta;
+                lr.startWidth = 2.5f;
+                lr.endWidth = 2.5f;
+                //lr.startColor = Color.magenta;
+                //lr.endColor = Color.magenta;
 
                 lr.material = corridorMat; 
                 lr.SetPosition(0, startLine);
