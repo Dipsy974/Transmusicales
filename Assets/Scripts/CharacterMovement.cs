@@ -45,14 +45,13 @@ public class CharacterMovement : MonoBehaviour
         _y = curve.ReturnActualY;
         _x = 0f;
 
-        if (myCond.selectedSong.planet == "blue")
-        {
-            _x = curve.amplitude * Mathf.Sin(_y * 2 * Mathf.PI * curve.frequency);
-        }
-        else if (myCond.selectedSong.planet == "yellow")
-        {
-            _x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(_y))) / Mathf.PI) - 1;
-        }
+        
+        _x = curve.amplitude * Mathf.Sin(_y * 2 * Mathf.PI * curve.frequency);
+        
+        //else if (myCond.selectedSong.planet == "yellow")
+        //{
+        //    _x = 2 * (((Mathf.PI / 2) - curve.amplitude * Mathf.Asin(Mathf.Cos(_y))) / Mathf.PI) - 1;
+        //}
 
             if (_compteur < myNS.listNotes.Count)
         {

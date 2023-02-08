@@ -13,15 +13,22 @@ public class CheckRythm : MonoBehaviour
     public ParticleSystem corridorParticles; 
     public ParticleSystem noteParticles; 
     private int compteur = 0;
+    private int compteurObstacles = 0;
+    private int compteurCollectibles = 0;
     private KeyBeats currentNote;
+    private Obstacles currentObstacle;
+    private Collectibles currentCollectible; 
     public float range;
 
     public int onBoardingTouchNb;
     public float onBoardingHoldNb;
+    public int onBoardingSwipeNb;
     private bool _onBoardingTouchChecked = false;
     private bool _onBoardingHoldChecked = false;
+    private bool _onBoardingSwipeChecked = false;
     private int onBoardingTouchCompteur = 0;
     private float onBoardingHoldCompteur = 0;
+    private float onBoardingSwipeCompteur = 0;
 
     private KeyBeats _previousNote;
 
@@ -32,8 +39,12 @@ public class CheckRythm : MonoBehaviour
     void Start()
     {
         currentNote = myCond.notes[compteur];
-        animator.LaunchRightSwipe(); 
-        
+        currentObstacle = myCond.selectedSong.obstacles[compteurObstacles];
+        currentCollectible = myCond.selectedSong.collectibles[compteurCollectibles];
+
+
+        _previousNote = currentNote;
+
     }
 
     // Update is called once per frame
@@ -41,7 +52,6 @@ public class CheckRythm : MonoBehaviour
     {
         if(myCond.songPositionInBeats > currentNote.keyPosition + 0.4f && compteur < myCond.notes.Length) //Actualise la note à checker
         {
-            Debug.Log(currentNote.GetCheck());
             if (!currentNote.GetCheck() && !currentNote.linkedEnd)
             {
                 myDefM.DecreaseScore();
@@ -60,6 +70,22 @@ public class CheckRythm : MonoBehaviour
                 
         }
 
+
+        if (myCond.songPositionInBeats > currentObstacle.keyPosition + 0.4f && compteur < myCond.selectedSong.obstacles.Length) //Actualise l'obstacle checker
+        {
+            
+            compteurObstacles++;
+            currentObstacle = myCond.selectedSong.obstacles[compteurObstacles];
+        }
+
+        if (myCond.songPositionInBeats > currentCollectible.keyPosition + 0.4f && compteur < myCond.selectedSong.collectibles.Length) //Actualise le collectible à checker
+        {
+            
+            compteurCollectibles++;
+            currentCollectible = myCond.selectedSong.collectibles[compteurCollectibles];
+      
+        }
+
         if (myCharacter.freeMode)
         {
             CheckCorridor();
@@ -67,6 +93,72 @@ public class CheckRythm : MonoBehaviour
         else
         {
             corridorParticles.Stop();
+        }
+
+        //Si l'onboarding touch n'est pas fini, lance l'animation quand la note se rapproche
+        if (!_onBoardingTouchChecked)
+        {
+            if(!currentNote.linkedStart && !currentNote.linkedEnd)
+            {
+                if(myCond.songPositionInBeats > currentNote.keyPosition - 2f)
+                { 
+                    animator.LaunchTap(); 
+                }
+            }
+        }
+
+        if (!_onBoardingHoldChecked)
+        {
+            if (currentNote.linkedStart)
+            {
+                if (myCond.songPositionInBeats > currentNote.keyPosition - 2f)
+                {
+                    animator.LaunchHold();
+                }
+            }
+            if (_previousNote.linkedStart)
+            {
+                animator.LaunchHold();  
+            }
+        }
+
+
+        if (!_onBoardingSwipeChecked)
+        {
+            if(myCond.songPositionInBeats > currentNote.keyPosition - 2f)
+            {
+                if(myCharacter.pathIndex > currentNote.line)
+                {
+                    animator.LaunchLeftSwipe();
+                }
+                else if(myCharacter.pathIndex < currentNote.line)
+                {
+                    animator.LaunchRightSwipe();
+                }
+            }
+            if (myCond.songPositionInBeats > currentObstacle.keyPosition - 2f)
+            {
+                if (myCharacter.pathIndex == currentObstacle.line && myCharacter.pathIndex == 0)
+                {
+                    animator.LaunchRightSwipe();
+                }
+                else if (myCharacter.pathIndex == currentObstacle.line && myCharacter.pathIndex >= 1)
+                {
+                    animator.LaunchLeftSwipe();
+                }
+            }
+            if (myCond.songPositionInBeats > currentCollectible.keyPosition - 2f)
+            {
+                
+                if (myCharacter.pathIndex > currentCollectible.line)
+                {
+                    animator.LaunchLeftSwipe();
+                }
+                else if (myCharacter.pathIndex < currentCollectible.line)
+                {
+                    animator.LaunchRightSwipe();
+                }
+            }
         }
     }
 
@@ -96,6 +188,8 @@ public class CheckRythm : MonoBehaviour
                         myScoreM.AccuracyPoints(myCond.songPositionInBeats, currentNote.keyPosition);
                     }
 
+                    CheckOnboarding("touch"); 
+
                 }
 
                 currentNote.CheckKey();
@@ -119,7 +213,7 @@ public class CheckRythm : MonoBehaviour
             {
                 corridorParticles.Play();
             }
-            
+            CheckOnboarding("hold");
             myDefM.IncreaseProgressScore();
             myScoreM.IncreaseProgressPoints();
         }
@@ -138,6 +232,10 @@ public class CheckRythm : MonoBehaviour
         else if(type == "hold")
         {
             onBoardingHoldCompteur++;
+            Debug.Log(onBoardingHoldCompteur); 
+        }else if(type == "swipe")
+        {
+            onBoardingSwipeCompteur++;
         }
 
         if(onBoardingHoldCompteur >= onBoardingHoldNb)
@@ -148,6 +246,11 @@ public class CheckRythm : MonoBehaviour
         if (onBoardingTouchCompteur >= onBoardingTouchNb)
         {
             _onBoardingTouchChecked = true;
+        }
+
+        if (onBoardingSwipeCompteur >= onBoardingSwipeNb)
+        {
+            _onBoardingSwipeChecked = true;
         }
     }
 

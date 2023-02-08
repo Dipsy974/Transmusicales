@@ -22,7 +22,7 @@ public class DefeatManager : MonoBehaviour
     void Start()
     {
         currentScore = globalScore;
-        blurImage.SetActive(false); 
+        //blurImage.SetActive(false); 
     }
 
     // Update is called once per frame
