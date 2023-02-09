@@ -7540,7 +7540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926152083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17187724, y: -2.4680812, z: -0.25097167}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17276,7 +17276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969756253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17187724, y: -2.4680812, z: -0.25097167}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27475,6 +27475,7 @@ MonoBehaviour:
   obstacleParticles: {fileID: 937254055}
   corridorParticles: {fileID: 1737821360}
   jetpackParticles: {fileID: 0}
+  importantParticles: {fileID: 0}
   scoreDecreaseOnHit: 100
   scoreIncreaseOnCollect: 20
 --- !u!61 &1118251430
@@ -38873,7 +38874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689301731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17187724, y: -2.4680812, z: -0.25097167}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54419,6 +54420,7 @@ MonoBehaviour:
   obstacleParticles: {fileID: 937254055}
   corridorParticles: {fileID: 1737821360}
   jetpackParticles: {fileID: 1813273094}
+  importantParticles: {fileID: 0}
   scoreDecreaseOnHit: 100
   scoreIncreaseOnCollect: 20
 --- !u!1 &2119064040
@@ -55001,6 +55003,10 @@ PrefabInstance:
       propertyPath: obstacleParticles
       value: 
       objectReference: {fileID: 937254055}
+    - target: {fileID: 6408544957144009577, guid: 055bbca3b5948e844a2b8dc351d9e6a0, type: 3}
+      propertyPath: importantParticles
+      value: 
+      objectReference: {fileID: 1284880381}
     - target: {fileID: 6408544957144009577, guid: 055bbca3b5948e844a2b8dc351d9e6a0, type: 3}
       propertyPath: collectibleParticles
       value: 
