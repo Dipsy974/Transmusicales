@@ -23,492 +23,487 @@ MonoBehaviour:
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 13
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 16.5
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 20.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 24
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 30.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 33.8
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 36.8
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 39.8
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 42.5
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 45.5
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 48
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 49.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 60.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 62.5
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 64.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 69
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 71
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 73
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 75
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 77
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 79
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 81
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 83
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 87.1
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 93.5
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 95.2
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 103.2
     line: 0
     linkedStart: 1
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 111.5
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 119
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 125
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 127.5
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 134
     line: 2
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 135.5
     line: 2
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 141.5
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 143
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 150
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 154.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 159.5
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 164.5
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 168.5
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 171
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 173
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 174
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 176
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 178
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 180
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 182
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 184
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 186
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 188
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 190
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 196
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 198
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 200
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 202
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 204
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 206
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 208
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 210
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 212
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 214
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 216
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 218
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 220
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 222
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 224
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 226
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 228
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 230
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 232
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 234
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 236
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 238
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 240
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 246
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 248
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 250
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 252
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 254
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 256
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 258
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
-  - keyPosition: 258
-    line: 1
-    linkedStart: 0
-    linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 260
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 262
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 264
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 266
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 268
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 286
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 288
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 290
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 292
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 294
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 296
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 298
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 300
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 302
     line: 2
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 308
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   obstacles:
   - keyPosition: 52.2
     line: 1
