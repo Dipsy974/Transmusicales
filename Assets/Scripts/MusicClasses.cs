@@ -9,7 +9,7 @@ public class KeyBeats
     public int line;
     public bool linkedStart;
     public bool linkedEnd;
-    public bool isObstacle;
+    public bool isImportant;
 
     [System.NonSerialized]
     public bool isChecked = false;

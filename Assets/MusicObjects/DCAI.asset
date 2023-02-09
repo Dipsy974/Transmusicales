@@ -15,7 +15,7 @@ MonoBehaviour:
   songName: DCAI
   artistName: Alvan
   planet: Wild
-  lastBeat: 500
+  lastBeat: 332
   bpm: 121
   audio: {fileID: 8300000, guid: 2eafbcb6e19fd534fb3fd43e2027bb23, type: 3}
   keyBeats:
@@ -23,307 +23,567 @@ MonoBehaviour:
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 34.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 36.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 38.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 40.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 42.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 44.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 45.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 46.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 48.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 49.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 51.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 53.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 55.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 57.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 59.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 60.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 61.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 62.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 64.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 65.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 66.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 68.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 70.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 72.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 74.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 75.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 76.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 78.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 80.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 81.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 82.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 84.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 85.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 87.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 88.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 89.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 96.7
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 100.7
     line: 2
     linkedStart: 1
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 104.7
     line: 0
     linkedStart: 1
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 112.7
     line: 2
     linkedStart: 1
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 125.7
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 128.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 1
   - keyPosition: 130.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 132.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 134.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 136.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 138.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 140.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 144.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 146.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 149.7
     line: 1
     linkedStart: 1
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 158.7
     line: 1
     linkedStart: 0
     linkedEnd: 1
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 161.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 163.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 164.7
     line: 0
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 166.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 167.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 169.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 170.7
     line: 2
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
   - keyPosition: 172.7
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isObstacle: 0
+    isImportant: 0
+  - keyPosition: 176.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 177.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 178.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 182.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 183.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 184.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 186.7
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 191.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 193.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 1
+  - keyPosition: 195.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 196.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 198.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 199.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 201.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 202.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 203.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 205.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 207.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 210.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 213.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 214.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 215.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 217.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 218.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 220.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 221.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 222.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 229.7
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 235.7
+    line: 2
+    linkedStart: 1
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 242.7
+    line: 0
+    linkedStart: 1
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 248.7
+    line: 2
+    linkedStart: 1
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 254.7
+    line: 0
+    linkedStart: 1
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 258.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 260.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 1
+  - keyPosition: 262.7
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 268.7
+    line: 2
+    linkedStart: 1
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 274.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isImportant: 0
+  - keyPosition: 276.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 278.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 280.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 282.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 284.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 285.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 286.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 288.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 289.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 290.7
+    line: 0
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 292.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 293.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 294.7
+    line: 2
+    linkedStart: 0
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 318.7
+    line: 1
+    linkedStart: 1
+    linkedEnd: 0
+    isImportant: 0
+  - keyPosition: 326.7
+    line: 1
+    linkedStart: 0
+    linkedEnd: 1
+    isImportant: 0
   obstacles:
   - keyPosition: 64.7
     line: 1
@@ -365,6 +625,42 @@ MonoBehaviour:
     line: 0
   - keyPosition: 156.7
     line: 2
+  - keyPosition: 174.7
+    line: 1
+  - keyPosition: 180.7
+    line: 0
+  - keyPosition: 181.7
+    line: 0
+  - keyPosition: 186.7
+    line: 2
+  - keyPosition: 195.7
+    line: 1
+  - keyPosition: 198.7
+    line: 0
+  - keyPosition: 199.7
+    line: 1
+  - keyPosition: 201.7
+    line: 2
+  - keyPosition: 201.7
+    line: 0
+  - keyPosition: 203.7
+    line: 0
+  - keyPosition: 203.7
+    line: 2
+  - keyPosition: 207.7
+    line: 1
+  - keyPosition: 209.7
+    line: 0
+  - keyPosition: 212.7
+    line: 2
+  - keyPosition: 213.7
+    line: 1
+  - keyPosition: 216.7
+    line: 0
+  - keyPosition: 220.7
+    line: 1
+  - keyPosition: 299.7
+    line: 1
   collectibles:
   - keyPosition: 3.5
     line: 1
@@ -455,4 +751,106 @@ MonoBehaviour:
   - keyPosition: 123.7
     line: 1
   - keyPosition: 124.7
+    line: 1
+  - keyPosition: 223.7
+    line: 1
+  - keyPosition: 224.7
+    line: 1
+  - keyPosition: 225.7
+    line: 1
+  - keyPosition: 226.7
+    line: 1
+  - keyPosition: 227.7
+    line: 1
+  - keyPosition: 228.7
+    line: 1
+  - keyPosition: 230.7
+    line: 1
+  - keyPosition: 231.7
+    line: 1
+  - keyPosition: 232.7
+    line: 2
+  - keyPosition: 233.7
+    line: 2
+  - keyPosition: 234.7
+    line: 2
+  - keyPosition: 235.7
+    line: 2
+  - keyPosition: 236.7
+    line: 2
+  - keyPosition: 237.7
+    line: 2
+  - keyPosition: 238.7
+    line: 1
+  - keyPosition: 239.7
+    line: 1
+  - keyPosition: 240.7
+    line: 1
+  - keyPosition: 241.7
+    line: 0
+  - keyPosition: 242.7
+    line: 0
+  - keyPosition: 243.7
+    line: 1
+  - keyPosition: 244.7
+    line: 1
+  - keyPosition: 245.7
+    line: 1
+  - keyPosition: 246.7
+    line: 2
+  - keyPosition: 247.7
+    line: 2
+  - keyPosition: 248.7
+    line: 2
+  - keyPosition: 249.7
+    line: 2
+  - keyPosition: 250.7
+    line: 1
+  - keyPosition: 251.7
+    line: 1
+  - keyPosition: 252.7
+    line: 0
+  - keyPosition: 253.7
+    line: 0
+  - keyPosition: 254.7
+    line: 0
+  - keyPosition: 255.7
+    line: 0
+  - keyPosition: 256.7
+    line: 0
+  - keyPosition: 257.7
+    line: 1
+  - keyPosition: 296.7
+    line: 1
+  - keyPosition: 297.7
+    line: 1
+  - keyPosition: 298.7
+    line: 1
+  - keyPosition: 300.7
+    line: 0
+  - keyPosition: 301.7
+    line: 0
+  - keyPosition: 302.7
+    line: 0
+  - keyPosition: 304.7
+    line: 1
+  - keyPosition: 305.7
+    line: 1
+  - keyPosition: 306.7
+    line: 1
+  - keyPosition: 308.7
+    line: 2
+  - keyPosition: 309.7
+    line: 2
+  - keyPosition: 310.7
+    line: 2
+  - keyPosition: 312.7
+    line: 1
+  - keyPosition: 313.7
+    line: 1
+  - keyPosition: 314.7
+    line: 1
+  - keyPosition: 315.7
+    line: 1
+  - keyPosition: 316.7
     line: 1
