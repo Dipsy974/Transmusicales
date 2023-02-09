@@ -23,6 +23,7 @@ public class YellowCurveVariations : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myChar = CharacterMovement.Instance;
         this.enabled = false; 
     }
 

@@ -31,6 +31,19 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 _targetPosition;
     private float _x, _y;
 
+    public static CharacterMovement Instance;
+    private void Awake()
+    {
+        if(CharacterMovement.Instance == null)
+        {
+            CharacterMovement.Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -190,6 +203,7 @@ public class CharacterMovement : MonoBehaviour
 
 
         animator.SetTrigger("ChangeLine");
+        animator.SetTrigger("Move");
         while (delta<=1)
         {
             delta += Time.deltaTime*3;

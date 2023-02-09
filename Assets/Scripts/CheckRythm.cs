@@ -38,6 +38,7 @@ public class CheckRythm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myCharacter = CharacterMovement.Instance;
         currentNote = myCond.notes[compteur];
         currentObstacle = myCond.selectedSong.obstacles[compteurObstacles];
         currentCollectible = myCond.selectedSong.collectibles[compteurCollectibles];
@@ -208,7 +209,7 @@ public class CheckRythm : MonoBehaviour
     {
         if (myCharacter.GetIsInCorridor())
         {
-            corridorParticles.transform.position = myCharacter.transform.position + new Vector3(0, 0, -2);
+            corridorParticles.transform.position = myCharacter.transform.position + new Vector3(0, 1, -2);
             if (!corridorParticles.isPlaying)
             {
                 corridorParticles.Play();
