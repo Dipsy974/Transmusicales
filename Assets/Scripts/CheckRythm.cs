@@ -33,6 +33,7 @@ public class CheckRythm : MonoBehaviour
     private KeyBeats _previousNote;
 
     public AnimatorLauncher animator;
+    public Animator particleAnimator;
 
 
     // Start is called before the first frame update
@@ -189,6 +190,11 @@ public class CheckRythm : MonoBehaviour
                         myScoreM.AccuracyPoints(myCond.songPositionInBeats, currentNote.keyPosition);
                     }
 
+                    if (currentNote.isImportant)
+                    {
+                        particleAnimator.SetTrigger("Launch");
+                    }
+                    
                     CheckOnboarding("touch"); 
 
                 }
