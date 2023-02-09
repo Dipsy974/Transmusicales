@@ -18,7 +18,8 @@ public class CharacterMovement : MonoBehaviour
     public ParticleSystem collectibleParticles;
     public ParticleSystem obstacleParticles;
     public ParticleSystem corridorParticles;
-    public ParticleSystem jetpackParticles; 
+    public ParticleSystem jetpackParticles;
+    public GameObject importantParticles; 
     
     public float scoreDecreaseOnHit;
     public float scoreIncreaseOnCollect;
@@ -58,6 +59,7 @@ public class CharacterMovement : MonoBehaviour
 
       
         jetpackParticles.transform.position = transform.position + new Vector3(0, 0.1f, -2);
+        importantParticles.transform.position = transform.position + new Vector3(0, 0.1f, -2);
 
         float progress = (myCond.songPositionInBeats) / myCond.totalBeats;
         _y = curve.ReturnActualY;
