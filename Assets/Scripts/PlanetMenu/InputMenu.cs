@@ -35,6 +35,7 @@ public class InputMenu : MonoBehaviour
                 {
                     //save began touch 2d point
                     firstPressPos = new Vector2(t.position.x, t.position.y);
+                
                 }
                 if (t.phase == TouchPhase.Ended)
                 {
@@ -56,7 +57,7 @@ public class InputMenu : MonoBehaviour
                 {
                     rotation.ChangePlanet("right");
                 }
-                else if (!rotation.isRotating)
+                else if (!rotation.isRotating && firstPressPos.y < 1800)
                 {
                     selectPlanet.Select();
                 }
