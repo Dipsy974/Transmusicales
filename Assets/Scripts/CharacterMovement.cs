@@ -18,7 +18,8 @@ public class CharacterMovement : MonoBehaviour
     public ParticleSystem collectibleParticles;
     public ParticleSystem obstacleParticles;
     public ParticleSystem corridorParticles;
-    public ParticleSystem jetpackParticles; 
+    public ParticleSystem jetpackParticles;
+    public GameObject importantParticles; 
     
     public float scoreDecreaseOnHit;
     public float scoreIncreaseOnCollect;
@@ -30,6 +31,19 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 _target;
     private Vector3 _targetPosition;
     private float _x, _y;
+
+    public static CharacterMovement Instance;
+    private void Awake()
+    {
+        if(CharacterMovement.Instance == null)
+        {
+            CharacterMovement.Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
     // Start is called before the first frame update
@@ -45,6 +59,7 @@ public class CharacterMovement : MonoBehaviour
 
       
         jetpackParticles.transform.position = transform.position + new Vector3(0, 0.1f, -2);
+        importantParticles.transform.position = transform.position + new Vector3(0, 0.1f, -2);
 
         float progress = (myCond.songPositionInBeats) / myCond.totalBeats;
         _y = curve.ReturnActualY;
@@ -190,6 +205,7 @@ public class CharacterMovement : MonoBehaviour
 
 
         animator.SetTrigger("ChangeLine");
+        animator.SetTrigger("Move");
         while (delta<=1)
         {
             delta += Time.deltaTime*3;

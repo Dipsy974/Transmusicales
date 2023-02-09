@@ -32,7 +32,6 @@ public class ListMenuAssetsChange : MonoBehaviour
         }
 
 
-
         Instantiate(canvasPrefabs[planetIndex], _parent.position, Quaternion.identity, _parent);
     }
 
