@@ -13,7 +13,7 @@ public class Sinewave : MonoBehaviour
     public Vector2 lineLimits = new Vector2(0, 1);
     public Vector3 startPos, finalPos;
 
-    public float ReturnActualY => transform.position.y * -1;
+    public float ReturnActualY => transform.position.y * -1 -1;
 
 
     // Start is called before the first frame update
