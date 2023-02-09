@@ -23,12 +23,12 @@ MonoBehaviour:
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isImportant: 1
+    isImportant: 0
   - keyPosition: 30
     line: 1
     linkedStart: 0
     linkedEnd: 0
-    isImportant: 1
+    isImportant: 0
   - keyPosition: 32
     line: 1
     linkedStart: 0

@@ -205,7 +205,11 @@ public class CharacterMovement : MonoBehaviour
 
 
         animator.SetTrigger("ChangeLine");
+
+
+        
         animator.SetTrigger("Move");
+
         while (delta<=1)
         {
             delta += Time.deltaTime*3;
