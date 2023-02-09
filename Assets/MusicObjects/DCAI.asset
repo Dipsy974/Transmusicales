@@ -587,80 +587,130 @@ MonoBehaviour:
   obstacles:
   - keyPosition: 64.7
     line: 1
+    isBig: 0
   - keyPosition: 72.7
     line: 0
+    isBig: 0
   - keyPosition: 74.7
     line: 1
+    isBig: 0
   - keyPosition: 78.7
     line: 2
+    isBig: 0
   - keyPosition: 84.7
     line: 0
+    isBig: 0
   - keyPosition: 87.7
     line: 1
+    isBig: 0
   - keyPosition: 94.7
     line: 0
+    isBig: 0
   - keyPosition: 94.7
     line: 2
+    isBig: 0
   - keyPosition: 96.7
     line: 0
+    isBig: 0
   - keyPosition: 96.7
     line: 2
+    isBig: 0
   - keyPosition: 142.7
     line: 1
+    isBig: 0
   - keyPosition: 144.7
     line: 0
+    isBig: 0
   - keyPosition: 150.7
     line: 0
+    isBig: 0
   - keyPosition: 150.7
     line: 2
+    isBig: 0
   - keyPosition: 152.7
     line: 0
+    isBig: 0
   - keyPosition: 152.7
     line: 2
+    isBig: 0
   - keyPosition: 154.7
     line: 0
+    isBig: 0
   - keyPosition: 154.7
     line: 2
+    isBig: 0
   - keyPosition: 156.7
     line: 0
+    isBig: 0
   - keyPosition: 156.7
     line: 2
+    isBig: 0
   - keyPosition: 174.7
     line: 1
+    isBig: 0
   - keyPosition: 180.7
     line: 0
+    isBig: 0
   - keyPosition: 181.7
     line: 0
+    isBig: 0
   - keyPosition: 186.7
     line: 2
+    isBig: 0
   - keyPosition: 195.7
     line: 1
+    isBig: 0
   - keyPosition: 198.7
     line: 0
+    isBig: 0
   - keyPosition: 199.7
     line: 1
+    isBig: 0
   - keyPosition: 201.7
     line: 2
+    isBig: 0
   - keyPosition: 201.7
     line: 0
+    isBig: 0
   - keyPosition: 203.7
     line: 0
+    isBig: 0
   - keyPosition: 203.7
     line: 2
+    isBig: 0
   - keyPosition: 207.7
     line: 1
+    isBig: 0
   - keyPosition: 209.7
     line: 0
+    isBig: 0
   - keyPosition: 212.7
     line: 2
+    isBig: 0
   - keyPosition: 213.7
     line: 1
+    isBig: 0
   - keyPosition: 216.7
     line: 0
+    isBig: 0
   - keyPosition: 220.7
     line: 1
-  - keyPosition: 299.7
+    isBig: 0
+  - keyPosition: 300.7
     line: 1
+    isBig: 0
+  - keyPosition: 304.7
+    line: 0
+    isBig: 0
+  - keyPosition: 308.7
+    line: 1
+    isBig: 0
+  - keyPosition: 312.7
+    line: 2
+    isBig: 0
+  - keyPosition: 316.7
+    line: 0
+    isBig: 0
   collectibles:
   - keyPosition: 3.5
     line: 1
@@ -820,6 +870,26 @@ MonoBehaviour:
     line: 0
   - keyPosition: 257.7
     line: 1
+  - keyPosition: 263.7
+    line: 1
+  - keyPosition: 264.7
+    line: 1
+  - keyPosition: 265.7
+    line: 2
+  - keyPosition: 266.7
+    line: 2
+  - keyPosition: 267.7
+    line: 2
+  - keyPosition: 269.7
+    line: 2
+  - keyPosition: 270.7
+    line: 2
+  - keyPosition: 271.7
+    line: 1
+  - keyPosition: 272.7
+    line: 1
+  - keyPosition: 273.7
+    line: 1
   - keyPosition: 296.7
     line: 1
   - keyPosition: 297.7
@@ -845,12 +915,28 @@ MonoBehaviour:
   - keyPosition: 310.7
     line: 2
   - keyPosition: 312.7
-    line: 1
+    line: 0
   - keyPosition: 313.7
-    line: 1
+    line: 0
   - keyPosition: 314.7
-    line: 1
+    line: 0
   - keyPosition: 315.7
     line: 1
   - keyPosition: 316.7
+    line: 1
+  - keyPosition: 317.7
+    line: 1
+  - keyPosition: 318.7
+    line: 1
+  - keyPosition: 319.7
+    line: 1
+  - keyPosition: 320.7
+    line: 1
+  - keyPosition: 321.7
+    line: 1
+  - keyPosition: 322.7
+    line: 1
+  - keyPosition: 323.7
+    line: 1
+  - keyPosition: 324.7
     line: 1
