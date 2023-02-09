@@ -31,6 +31,7 @@ public class Obstacles
 {
     public float keyPosition;
     public int line;
+    public bool isBig; 
 
 }
 
